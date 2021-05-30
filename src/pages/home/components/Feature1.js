@@ -3,15 +3,11 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/styles";
 
-// pictures
-import HomeBackground from "../../../images/main-ground.svg";
-import Divider from "@material-ui/core/Divider";
-
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     width: "100vw",
-    height: "85vh",
+    height: "55vh",
     backgroundColor: "white",
     backgroundImage: 'url(' + require('../../../images/bg-main.svg') + ')',
     backgroundRepeat: "no-repeat",
@@ -31,20 +27,13 @@ const useStyles = makeStyles(theme => ({
       opacity: 1,
     }
   },
-  paperLeft: {
+  paperCenter: {
     height: "90%",
     marginTop: theme.spacing(2),
     display: "flex",
     justifyContent: "center",
-    alignItems: "start",
-    flexDirection: "column",
-  },
-  pageRight: {
-    height: "100%",
-    padding: theme.spacing(2),
-    display: "flex",
-    justifyContent: "center",
     alignItems: "center",
+    flexDirection: "column",
   },
   homeImg: {
     height: "70vh",
@@ -53,19 +42,14 @@ const useStyles = makeStyles(theme => ({
     height: 23,
   },
   logoSlogan: {
-    fontSize: 84,
+    fontSize: 64,
     fontWeight: 800,
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(2),
   },
-  divider: {
-    backgroundColor: "white",
-    height: 2,
-    width: 40,
-  },
   logoBody: {
-    fontSize: 21,
-    fontWeight: 600,
+    fontSize: 19,
+    fontWeight: 500,
   },
   buttonInfoToMore: {
     fontSize: 16,
@@ -78,7 +62,7 @@ const useStyles = makeStyles(theme => ({
     paddingRight: theme.spacing(3),
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(1),
-    borderRadius: 4,
+    borderRadius: 25,
     "&:hover": {
       color: "white",
     },
@@ -96,22 +80,21 @@ export default function Feature1(props) {
 
   const defaultSystemName = "Spotrix";
 
-  const sloganBody = "spotrix - explore data insight for every one.";
+  const sloganBody = "spotrix, explore insights for everyone";
 
   return (
     <div className={classes.root}>
       <Grid container spacing={1} className={classes.mainPart}>
         <Grid item xs={2}>
         </Grid>
-        <Grid item xs={3}>
-          <div className={classes.paperLeft}>
+        <Grid item xs={8}>
+          <div className={classes.paperCenter}>
             <div>
               <p className={classes.logoSlogan} id="slogan">
                 {props.isSubsystem ? props.item.name : defaultSystemName}
               </p>
             </div>
             <div>
-              <Divider className={classes.divider} />
               <p className={classes.logoBody}>
                 {sloganBody}
               </p>
@@ -126,16 +109,7 @@ export default function Feature1(props) {
             </div>
           </div>
         </Grid>
-        <Grid item xs={6}>
-          <div className={classes.pageRight}>
-            <img
-              src={HomeBackground}
-              className={classes.homeImg}
-              alt="home-img"
-            />
-          </div>
-        </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2}>
         </Grid>
       </Grid>
     </div>
