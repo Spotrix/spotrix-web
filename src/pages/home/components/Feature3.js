@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: 16,
     fontWeight: 600,
+    color: "black",
   },
   card: {
     paddingTop: theme.spacing(2),

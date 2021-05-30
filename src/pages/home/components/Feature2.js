@@ -26,11 +26,13 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   title: {
+    color: "black",
     fontSize: 22,
     fontWeight: 600,
   },
   content: {
-    color: theme.palette.text.disabled,
+    color: theme.palette.text.secondary,
+    fontSize: 16,
   },
 }));
 
@@ -67,7 +69,7 @@ export default function Feature2() {
   return (
     <div className={classes.root}>
       <Title
-        name="Features"
+        name="Main Features"
         tip=""
       />
       <Grid container>
