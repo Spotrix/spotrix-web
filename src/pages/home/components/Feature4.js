@@ -33,7 +33,7 @@ const MainFeatures = [
   {
     id: 3,
     pic: DataFlowImg,
-    title: "Data-Driver workflows",
+    title: "Data-Driver Workflows",
     longDesc: "Invigorate your workflows with fresh, reliable data. Spotrix gives teams unified access to the answers they need to drive successful outcomes.",
     link: "",
   },
