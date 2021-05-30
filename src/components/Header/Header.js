@@ -28,13 +28,13 @@ export default function Header() {
         />
         <p
           className={classes.subTitle}
-          onClick={() => window.open("https://ciusji.gitbook.io/guinsoolab/", "_target")}
+          onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_target")}
         >
           Docs
         </p>
         <p
           className={classes.subTitle}
-          onClick={() => { window.open("https://ciusji.gitbook.io/guinsooblog/", "_target")}}
+          onClick={() => { window.open("https://ciusji.gitbook.io/spotrix/", "_target")}}
         >
           Blog
         </p>

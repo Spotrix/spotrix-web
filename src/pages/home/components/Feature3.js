@@ -65,49 +65,49 @@ export default function Feature3() {
           <Grid item xs={8}>
             <Grid container spacing={3} className={classes.container}>
               <Grid item xs={3}>
-                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://guinsoolab.github.io/glab", "_target")}>
+                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://ciusji.gitbook.io/spotrix/documents/platform", "_target")}>
                   <img src={PlatformIcon} width={30} alt="platform" />
                   <p>Platform</p>
                 </Card>
               </Grid>
               <Grid item xs={3}>
-                <Card variant={"outlined"} className={classes.card}>
+                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://ciusji.gitbook.io/spotrix/documents/business-intelligence", "_target")}>
                   <img src={BiIcon} width={30} alt="bi" />
                   <p>Business Intelligence</p>
                 </Card>
               </Grid>
               <Grid item xs={3}>
-                <Card variant={"outlined"} className={classes.card}>
+                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://ciusji.gitbook.io/spotrix/documents/applications", "_target")}>
                   <img src={AppIcon} width={30} alt="app" />
                   <p>Applications</p>
                 </Card>
               </Grid>
               <Grid item xs={3}>
-                <Card variant={"outlined"} className={classes.card}>
+                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://ciusji.gitbook.io/spotrix/documents/spotrix-pre", "_target")}>
                   <img src={ModelIcon} width={30} alt="modeling" />
                   <p>Data Modeling</p>
                 </Card>
               </Grid>
               <Grid item xs={3}>
-                <Card variant={"outlined"} className={classes.card}>
+                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_target")}>
                   <img src={PreIcon} width={30} alt="pre" />
                   <p>Spotrix Pre</p>
                 </Card>
               </Grid>
               <Grid item xs={3}>
-                <Card variant={"outlined"} className={classes.card}>
+                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://ciusji.gitbook.io/spotrix/documents/data-actions", "_target")}>
                   <img src={ActionIcon} width={30} alt="action" />
                   <p>Data Actions</p>
                 </Card>
               </Grid>
               <Grid item xs={3}>
-                <Card variant={"outlined"} className={classes.card}>
+                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://ciusji.gitbook.io/spotrix/documents/api", "_target")}>
                   <img src={ApiIcon} width={30} alt="api" />
                   <p>API</p>
                 </Card>
               </Grid>
               <Grid item xs={3}>
-                <Card variant={"outlined"} className={classes.card}>
+                <Card variant={"outlined"} className={classes.card} onClick={() => window.open("https://ciusji.gitbook.io/spotrix/documents/security", "_target")}>
                   <img src={SecurityIcon} width={30} alt="security" />
                   <p>Security</p>
                 </Card>
