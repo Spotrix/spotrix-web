@@ -68,7 +68,7 @@ export default function Feature2() {
     <div className={classes.root}>
       <Title
         name="Features"
-        tip={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a metus quis lorem malesuada luctus."}
+        tip=""
       />
       <Grid container>
         <Grid item xs={1}>

@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   },
   paperCenter: {
     height: "90%",
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(4),
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
     height: 23,
   },
   logoSlogan: {
-    fontSize: 64,
+    fontSize: 84,
     fontWeight: 800,
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(2),
@@ -80,7 +80,7 @@ export default function Feature1(props) {
 
   const defaultSystemName = "Spotrix";
 
-  const sloganBody = "spotrix, explore insights for everyone";
+  const sloganBody = "explore insights for everyone";
 
   return (
     <div className={classes.root}>
