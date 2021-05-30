@@ -10,6 +10,8 @@
 
 `explore insights for everyone.`
 
+Home page click [here](https://spotrix.github.io/spotrix-web/).
+
 <br/>
 
 
