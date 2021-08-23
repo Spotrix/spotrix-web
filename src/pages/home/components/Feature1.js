@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
+import Typed from "typed.js/lib/typed";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(theme => ({
@@ -48,8 +49,8 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(2),
   },
   logoBody: {
-    fontSize: 19,
-    fontWeight: 500,
+    fontSize: 22,
+    fontWeight: 600,
   },
   buttonInfoToMore: {
     fontSize: 16,
@@ -84,7 +85,21 @@ export default function Feature1(props) {
 
   const defaultSystemName = "Spotrix";
 
-  const sloganBody = "explore insights for everyone";
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["explore insights for everyone", "share insights for everywhere"],
+      startDelay: 100,
+      typeSpeed: 40,
+      backSpeed: 10,
+      backDelay: 800,
+      loop: true,
+    });
+    return () => {
+      typed.destroy();
+    }
+  }, []);
 
   return (
     <div className={classes.root}>
@@ -100,7 +115,8 @@ export default function Feature1(props) {
             </div>
             <div>
               <p className={classes.logoBody}>
-                {sloganBody}, powered by&nbsp;
+                <span ref={el} />
+                , powered by&nbsp;
                 <a className={classes.guinsooLab} href={"https://guinsoolab.github.io/glab/"} target={"_target"}>Guinsoo Lab</a>
                 .
               </p>

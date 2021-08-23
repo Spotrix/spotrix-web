@@ -64,7 +64,7 @@ export default function Feature5() {
                   this technology can be, but just try it and you will do better.
                 </p>
                 <i className={classes.smallFont}>
-                  - ciusji, manager of Guinsoo Lab
+                  - ciusji, administrator of GuinsooLab
                 </i>
               </Grid>
               <Grid item xs={3} className={classes.avatarGrid}>
