@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/spotrix-web/static/js/main.208a555f.chunk.js",
-    "main.js.map": "/spotrix-web/static/js/main.208a555f.chunk.js.map",
+    "main.js": "/spotrix-web/static/js/main.4ff49d4a.chunk.js",
+    "main.js.map": "/spotrix-web/static/js/main.4ff49d4a.chunk.js.map",
     "runtime~main.js": "/spotrix-web/static/js/runtime~main.2cee48ba.js",
     "runtime~main.js.map": "/spotrix-web/static/js/runtime~main.2cee48ba.js.map",
-    "static/js/2.22f72dcd.chunk.js": "/spotrix-web/static/js/2.22f72dcd.chunk.js",
-    "static/js/2.22f72dcd.chunk.js.map": "/spotrix-web/static/js/2.22f72dcd.chunk.js.map",
+    "static/js/2.a5566221.chunk.js": "/spotrix-web/static/js/2.a5566221.chunk.js",
+    "static/js/2.a5566221.chunk.js.map": "/spotrix-web/static/js/2.a5566221.chunk.js.map",
     "index.html": "/spotrix-web/index.html",
-    "precache-manifest.7f56201eb5107c8c3ae5cf7ee1b3b5b0.js": "/spotrix-web/precache-manifest.7f56201eb5107c8c3ae5cf7ee1b3b5b0.js",
+    "precache-manifest.bf9035b9267d40819dadd3e65ffb2dcc.js": "/spotrix-web/precache-manifest.bf9035b9267d40819dadd3e65ffb2dcc.js",
     "service-worker.js": "/spotrix-web/service-worker.js",
     "static/media/api.svg": "/spotrix-web/static/media/api.03af92f3.svg",
     "static/media/app.svg": "/spotrix-web/static/media/app.93f63f6d.svg",

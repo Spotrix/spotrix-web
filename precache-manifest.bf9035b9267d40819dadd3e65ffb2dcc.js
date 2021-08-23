@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e85501f42743660b3b98b99d95d4322",
+    "revision": "e072b20f87f4fd29d41f02f147f81917",
     "url": "/spotrix-web/index.html"
   },
   {
-    "revision": "e2988a99227bdb8f4775",
-    "url": "/spotrix-web/static/js/2.22f72dcd.chunk.js"
+    "revision": "6a9f73cb53b58d75ac9b",
+    "url": "/spotrix-web/static/js/2.a5566221.chunk.js"
   },
   {
-    "revision": "28c53e5a03bbe3aac95b",
-    "url": "/spotrix-web/static/js/main.208a555f.chunk.js"
+    "revision": "61e68ecac7308612eb48",
+    "url": "/spotrix-web/static/js/main.4ff49d4a.chunk.js"
   },
   {
     "revision": "f80ebc8faf9402d2b1bc",
