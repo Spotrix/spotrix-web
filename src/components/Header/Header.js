@@ -26,6 +26,7 @@ export default function Header() {
           alt="glab-logo"
           onClick={() => window.open("#/app/home", "_self")}
         />
+        {/*<div className={classes.grow} />*/}
         <p
           className={classes.subTitle}
           onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_target")}

@@ -73,7 +73,7 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.primary,
     justifyContent: "center",
   },
-  guinnsooLab: {
+  guinsooLab: {
     color: "white",
     fontWeight: 600,
   }
@@ -101,7 +101,7 @@ export default function Feature1(props) {
             <div>
               <p className={classes.logoBody}>
                 {sloganBody}, powered by&nbsp;
-                <a className={classes.guinnsooLab} href={"https://guinsoolab.github.io/glab/"} target={"_target"}>Guinsoo Lab</a>
+                <a className={classes.guinsooLab} href={"https://guinsoolab.github.io/glab/"} target={"_target"}>Guinsoo Lab</a>
                 .
               </p>
             </div>

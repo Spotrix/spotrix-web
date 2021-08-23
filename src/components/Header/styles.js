@@ -31,7 +31,7 @@ export default makeStyles(theme => {
       width: 150,
       color: theme.palette.text.secondary,
       fontSize: 15,
-      fontWeight: 500,
+      fontWeight: 600,
       "&:hover": {
         cursor: "pointer",
         color: theme.palette.primary.main,
