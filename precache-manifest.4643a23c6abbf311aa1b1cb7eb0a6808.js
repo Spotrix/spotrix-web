@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e072b20f87f4fd29d41f02f147f81917",
+    "revision": "d5cbe3b17e2060e78f1238ac0594eb35",
     "url": "/spotrix-web/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spotrix-web/static/js/2.a5566221.chunk.js"
   },
   {
-    "revision": "61e68ecac7308612eb48",
-    "url": "/spotrix-web/static/js/main.4ff49d4a.chunk.js"
+    "revision": "686e5b2a9355ee760432",
+    "url": "/spotrix-web/static/js/main.2b4de833.chunk.js"
   },
   {
     "revision": "f80ebc8faf9402d2b1bc",
