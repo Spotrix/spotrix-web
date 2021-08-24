@@ -160,8 +160,8 @@ export default function Feature4() {
                 </Button>
               </Grid>
               <Grid item xs={7} className={classes.featurePic}>
-                <video loop={true} autoPlay={true}>
-                  <source  src={info.video} type={"video/mp4"} />
+                <video autoPlay={true} loop={true} muted={true}>
+                  <source src={info.video} type={"video/mp4"} />
                 </video>
               </Grid>
             </Grid>
