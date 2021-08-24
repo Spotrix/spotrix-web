@@ -48,7 +48,7 @@ export default function ActionFeature() {
         <Grid item xs={3} />
         <Grid item xs={5}>
           <p className={classes.title}>Get started for free today</p>
-          <p className={classes.body}>Just try it.</p>
+          <p className={classes.body}>Insight for all, whatever your role.</p>
         </Grid>
         <Grid item xs={2}>
           <Button className={classes.button} onClick={() => window.open("https://github.com/Spotrix", "_target")}>
