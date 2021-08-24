@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(5),
   },
   featureContainer: {
-    height: "70vh",
+    height: "65vh",
     marginTop: theme.spacing(2),
   },
   appName: {
