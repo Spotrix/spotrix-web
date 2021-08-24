@@ -19,8 +19,7 @@ import SecurityIcon from "../../../images/security.svg";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginBottom: theme.spacing(5),
-    marginTop: theme.spacing(5),
+    marginBottom: theme.spacing(10),
   },
   content: {
     height: "15vh",

@@ -8,40 +8,40 @@ import Divider from "@material-ui/core/Divider";
 // components
 import Title from "../../../components/Title";
 
-// pics
-import DashboardImg from "../../../images/dashboard.svg";
-import InsightsImg from "../../../images/insights.svg";
-import DataFlowImg from "../../../images/dataflow.svg";
-import CustomImg from "../../../images/custom.svg";
+// videos
+import InsightsVideo from "../../../video/insights.mp4";
+import CloudDataVideo from "../../../video/clouddata.mp4";
+import DeveloperVideo from "../../../video/developer.mp4";
+import BacklogVideo from "../../../video/backlog.mp4";
 
 
 const MainFeatures = [
   {
     id: 1,
-    pic: DashboardImg,
-    title: "Modern BI & Analytics",
-    longDesc: "Serve up real-time dashboards for more in-depth, consistent analysis. Access to trustworthy data enables teams to collect fresh results for more precise reporting.",
+    video: InsightsVideo,
+    title: "Instant insights for all",
+    longDesc: "Stop waiting for custom reports from data experts and instantly answer ad-hoc data questions on the fly.",
     link: "",
   },
   {
     id: 2,
-    pic: InsightsImg,
-    title: "Integrated Insights",
-    longDesc: "Enhance the tools you’re already using by infusing new, relevant data. Unify and empower your teams to make more effective, data-informed decisions.",
+    video: CloudDataVideo,
+    title: "Unleash the value of your cloud data",
+    longDesc: "Maximize the value of your cloud data warehouse and accelerate speed-to-insight for everyone across your business.",
     link: "",
   },
   {
     id: 3,
-    pic: DataFlowImg,
-    title: "Data-Driver Workflows",
-    longDesc: "Invigorate your workflows with fresh, reliable data. Spotrix gives teams unified access to the answers they need to drive successful outcomes.",
+    video: DeveloperVideo,
+    title: "Build Interactive Data Apps",
+    longDesc: "Drive adoption by embedding search and insight-driven actions into your apps using our low-code developer-friendly platform.",
     link: "",
   },
   {
     id: 4,
-    pic: CustomImg,
-    title: "Custom Applications",
-    longDesc: "Create custom apps that deliver data experiences as unique as your business. Spotrix's embedded analytics solutions, from retail to healthcare, give your customers the data they need to get the job done.",
+    video: BacklogVideo,
+    title: "Bye-bye backlog",
+    longDesc: "Empower non-technical people to answer their own data questions, while you build a single source of truth with security and governance at scale.",
     link: "",
   },
 ];
@@ -49,8 +49,7 @@ const MainFeatures = [
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginBottom: theme.spacing(5),
-    marginTop: theme.spacing(5),
+    backgroundColor: "#f2f6fa",
   },
   items: {
     display: "flex",
@@ -63,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appName: {
     color: "black",
-    fontSize: 24,
+    fontSize: 25,
     fontWeight: 600,
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(3),
@@ -72,15 +71,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(2),
     lineHeight: 2,
     color: theme.palette.text.secondary,
-    fontSize: 16,
+    fontSize: 20,
   },
   featurePic: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    "& > img": {
-      width: "30vw",
-      height: "30vw",
+    "& > video": {
+      width: "35vw",
+      height: "35vw",
     },
   },
   featureInfo: {
@@ -153,15 +152,17 @@ export default function Feature4() {
                 <Button
                   variant="outlined"
                   color={"primary"}
-                  endIcon={<ArrowRightAltIcon/>}
+                  endIcon={<ArrowRightAltIcon />}
                   className={classes.learnMore}
                   // onClick={() => window.open(info.link, "_target")}
                 >
-                  Quick Start
+                  Learn More
                 </Button>
               </Grid>
               <Grid item xs={7} className={classes.featurePic}>
-                <img src={info.pic} alt="feature-pic"/>
+                <video loop={true} autoPlay={true}>
+                  <source  src={info.video} type={"video/mp4"} />
+                </video>
               </Grid>
             </Grid>
           ))}

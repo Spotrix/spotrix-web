@@ -47,11 +47,11 @@ export default function ActionFeature() {
       <Grid container alignItems={"center"} justify={"center"} className={classes.root}>
         <Grid item xs={3} />
         <Grid item xs={5}>
-          <p className={classes.title}>Ready to get started?</p>
-          <p className={classes.body}>Just try it for free.</p>
+          <p className={classes.title}>Get started for free today</p>
+          <p className={classes.body}>Just try it.</p>
         </Grid>
         <Grid item xs={2}>
-          <Button className={classes.button} onClick={() => window.open("https://github.com/GuinsooLab", "_target")}>
+          <Button className={classes.button} onClick={() => window.open("https://github.com/Spotrix", "_target")}>
             Get Started
           </Button>
         </Grid>

@@ -10,8 +10,6 @@ import CommaIcon from "../../../images/comma.svg";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginBottom: theme.spacing(5),
-    marginTop: theme.spacing(5),
     height: "35vh",
     display: "flex",
     justifyContent: "center",
