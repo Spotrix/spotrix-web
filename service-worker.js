@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/spotrix-web/precache-manifest.5cb4e39e968e146c25ceb4b83128827e.js"
+  "/spotrix-web/precache-manifest.943a7c7971c8369b7f832ecc0ed414d0.js"
 );
 
 self.addEventListener('message', (event) => {
