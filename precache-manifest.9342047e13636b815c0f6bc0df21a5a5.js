@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "860ecefb8898a35c01258e4b2609c5cd",
+    "revision": "222933186c4655dea79a80fc871a6015",
     "url": "/spotrix-web/index.html"
   },
   {
-    "revision": "6a9f73cb53b58d75ac9b",
-    "url": "/spotrix-web/static/js/2.a5566221.chunk.js"
+    "revision": "69d8e7c501c4ce3f52d7",
+    "url": "/spotrix-web/static/js/2.1c69c25d.chunk.js"
   },
   {
-    "revision": "c257c671d38ddf407e55",
-    "url": "/spotrix-web/static/js/main.bc18d751.chunk.js"
+    "revision": "9dae7b0d7d3a0a8ef64e",
+    "url": "/spotrix-web/static/js/main.9e717a90.chunk.js"
   },
   {
     "revision": "f80ebc8faf9402d2b1bc",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spotrix-web/static/media/comma.f3b0550e.svg"
   },
   {
+    "revision": "4754659e3760af7343c1c68a317d36a3",
+    "url": "/spotrix-web/static/media/corp.4754659e.svg"
+  },
+  {
     "revision": "f895ccfc39346132af9013e05bd47955",
     "url": "/spotrix-web/static/media/developer.f895ccfc.mp4"
   },
@@ -70,10 +74,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2d7ee4e2eefe9058af6e401be84e8013",
     "url": "/spotrix-web/static/media/github.2d7ee4e2.svg"
-  },
-  {
-    "revision": "0f59ea5cfd88fa71e1f22386df088767",
-    "url": "/spotrix-web/static/media/glab.0f59ea5c.png"
   },
   {
     "revision": "7dbbfccc794eaeea225f9dc1e1294514",
