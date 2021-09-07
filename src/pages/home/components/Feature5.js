@@ -1,10 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import Avatar from "@material-ui/core/Avatar";
 
 // imgs
-import GlabIcon from "../../../images/glab.png";
+import CorpIcon from "../../../images/corp.svg";
 import CommaIcon from "../../../images/comma.svg";
 
 const useStyles = makeStyles((theme) => ({
@@ -36,12 +35,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   avatar: {
-    width: theme.spacing(8),
-    height: theme.spacing(8),
-    "&:hover": {
-      width: theme.spacing(9),
-      height: theme.spacing(9),
-    }
+    width: theme.spacing(18),
+    height: theme.spacing(18),
   }
 }));
 
@@ -66,12 +61,7 @@ export default function Feature5() {
                 </p>
               </Grid>
               <Grid item xs={3} className={classes.avatarGrid}>
-                <Avatar
-                  alt={"faker"}
-                  src={GlabIcon}
-                  className={classes.avatar}
-                  onClick={() => window.open("https://guinsoolab.github.io/glab", "_target")}
-                />
+                <img src={CorpIcon} alt="corp" className={classes.avatar} onClick={() => window.open("https://guinsoolab.github.io/glab", "_target")} />
               </Grid>
             </Grid>
           </Grid>
