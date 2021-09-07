@@ -1,4 +1,6 @@
-# ![logo](./public/spotrix.svg)
+<div align="center">
+    <img src="./public/spotrix.svg" width="50%" alt="logo" />
+</div>
 
 # Spotrix
 
