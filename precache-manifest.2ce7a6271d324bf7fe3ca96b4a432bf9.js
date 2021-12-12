@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "222933186c4655dea79a80fc871a6015",
+    "revision": "ed269b371cb5e86c43443c190b18f9e7",
     "url": "/spotrix-web/index.html"
   },
   {
-    "revision": "69d8e7c501c4ce3f52d7",
-    "url": "/spotrix-web/static/js/2.1c69c25d.chunk.js"
+    "revision": "27062e21627edc4421ec",
+    "url": "/spotrix-web/static/js/2.d5138199.chunk.js"
   },
   {
-    "revision": "9dae7b0d7d3a0a8ef64e",
-    "url": "/spotrix-web/static/js/main.9e717a90.chunk.js"
+    "revision": "5d96878a15c37e7bfdfd",
+    "url": "/spotrix-web/static/js/main.3d03c6ac.chunk.js"
   },
   {
     "revision": "f80ebc8faf9402d2b1bc",
@@ -78,10 +78,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7dbbfccc794eaeea225f9dc1e1294514",
     "url": "/spotrix-web/static/media/insights.7dbbfccc.mp4"
-  },
-  {
-    "revision": "b5ed5d9d3430e61f2626c40b76393116",
-    "url": "/spotrix-web/static/media/linkedin.b5ed5d9d.svg"
   },
   {
     "revision": "4f2fffa8217f01ff6d7e702b6d11f402",
