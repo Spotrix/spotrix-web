@@ -12,7 +12,6 @@ import useStyles from "./styles";
 // pictures
 import SpotrixFooterLogo from "../../images/spotrix-footer.svg";
 import GitHubLogo from "../../images/github.svg";
-import LinkedInLogo from "../../images/linkedin.svg";
 
 export default function Footer() {
   const classes = useStyles();
@@ -47,10 +46,6 @@ export default function Footer() {
                   <p className={classes.body2} onClick={() => window.open("https://github.com/Spotrix", "_target")}>
                     <img src={GitHubLogo} width={14} alt="github-logo"/>
                     &nbsp;&nbsp;GitHub
-                  </p>
-                  <p className={classes.body2} onClick={() => window.open("https://www.linkedin.com/in/ciusji/", "_target")}>
-                    <img src={LinkedInLogo} width={14} alt="linkedin-logo"/>
-                    &nbsp;&nbsp;LinkedIn
                   </p>
                 </Grid>
                 <Grid item xs={5} className={classes.footerBody}>

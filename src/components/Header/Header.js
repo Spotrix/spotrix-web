@@ -44,6 +44,7 @@ export default function Header() {
           <Button
             variant={"outlined"}
             className={classes.buttonInfoToMore}
+            onClick={() => window.open("https://github.com/Spotrix/spotrix/releases", "_target")}
           >
             Download
           </Button>

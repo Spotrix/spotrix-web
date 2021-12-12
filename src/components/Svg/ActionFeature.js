@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     width: "100vw",
-    height: "25vh",
+    height: "45vh",
     backgroundColor: "white",
     backgroundImage: 'url(' + require('../../images/bg-secondary.svg') + ')',
     backgroundRepeat: "no-repeat",
@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   title: {
     fontSize: 38,
     fontWeight: 800,
-    marginBottom: 0,
+    marginBottom: theme.spacing(10),
   },
   body: {
     fontSize: 16,
@@ -48,7 +48,7 @@ export default function ActionFeature() {
         <Grid item xs={3} />
         <Grid item xs={5}>
           <p className={classes.title}>Get started for free today</p>
-          <p className={classes.body}>Insights for all, whatever your role.</p>
+          <i className={classes.body}>Insights for all, whatever your role.</i>
         </Grid>
         <Grid item xs={2}>
           <Button className={classes.button} onClick={() => window.open("https://github.com/Spotrix", "_target")}>
