@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./public/spotrix.svg" width="50%" alt="logo" />
+    <img src="./public/spotrix.svg" width="120" alt="logo" />
 </div>
 
 # Spotrix
