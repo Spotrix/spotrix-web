@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed269b371cb5e86c43443c190b18f9e7",
+    "revision": "5d40dc06fcd7035d137997567bf74239",
     "url": "/spotrix-web/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spotrix-web/static/js/2.d5138199.chunk.js"
   },
   {
-    "revision": "5d96878a15c37e7bfdfd",
-    "url": "/spotrix-web/static/js/main.3d03c6ac.chunk.js"
+    "revision": "316e655281e25420800a",
+    "url": "/spotrix-web/static/js/main.20337253.chunk.js"
   },
   {
     "revision": "f80ebc8faf9402d2b1bc",
@@ -100,11 +100,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spotrix-web/static/media/security.cbc69166.svg"
   },
   {
-    "revision": "62933c751ba228370e5c04c782f258dd",
-    "url": "/spotrix-web/static/media/spotrix-footer.62933c75.svg"
+    "revision": "121c97fe539e9a2b4ff7da82ecf6fa33",
+    "url": "/spotrix-web/static/media/spotrix-footer.121c97fe.svg"
   },
   {
-    "revision": "6d45175ad879537cdd38b1f4500454bc",
-    "url": "/spotrix-web/static/media/spotrix.6d45175a.svg"
+    "revision": "121c97fe539e9a2b4ff7da82ecf6fa33",
+    "url": "/spotrix-web/static/media/spotrix.121c97fe.svg"
   }
 ]);

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/spotrix-web/static/js/main.3d03c6ac.chunk.js",
-    "main.js.map": "/spotrix-web/static/js/main.3d03c6ac.chunk.js.map",
+    "main.js": "/spotrix-web/static/js/main.20337253.chunk.js",
+    "main.js.map": "/spotrix-web/static/js/main.20337253.chunk.js.map",
     "runtime~main.js": "/spotrix-web/static/js/runtime~main.2cee48ba.js",
     "runtime~main.js.map": "/spotrix-web/static/js/runtime~main.2cee48ba.js.map",
     "static/js/2.d5138199.chunk.js": "/spotrix-web/static/js/2.d5138199.chunk.js",
     "static/js/2.d5138199.chunk.js.map": "/spotrix-web/static/js/2.d5138199.chunk.js.map",
     "index.html": "/spotrix-web/index.html",
-    "precache-manifest.2ce7a6271d324bf7fe3ca96b4a432bf9.js": "/spotrix-web/precache-manifest.2ce7a6271d324bf7fe3ca96b4a432bf9.js",
+    "precache-manifest.f5211821405a4d85d58d5391de51c996.js": "/spotrix-web/precache-manifest.f5211821405a4d85d58d5391de51c996.js",
     "service-worker.js": "/spotrix-web/service-worker.js",
     "static/media/api.svg": "/spotrix-web/static/media/api.03af92f3.svg",
     "static/media/app.svg": "/spotrix-web/static/media/app.93f63f6d.svg",
@@ -30,7 +30,7 @@
     "static/media/platform.svg": "/spotrix-web/static/media/platform.5e78f35f.svg",
     "static/media/pre.svg": "/spotrix-web/static/media/pre.84975c07.svg",
     "static/media/security.svg": "/spotrix-web/static/media/security.cbc69166.svg",
-    "static/media/spotrix-footer.svg": "/spotrix-web/static/media/spotrix-footer.62933c75.svg",
-    "static/media/spotrix.svg": "/spotrix-web/static/media/spotrix.6d45175a.svg"
+    "static/media/spotrix-footer.svg": "/spotrix-web/static/media/spotrix-footer.121c97fe.svg",
+    "static/media/spotrix.svg": "/spotrix-web/static/media/spotrix.121c97fe.svg"
   }
 }
