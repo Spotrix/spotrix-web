@@ -18,11 +18,11 @@ export default makeStyles(theme => {
       paddingRight: theme.spacing(2),
     },
     logo: {
-      marginLeft: theme.spacing(34),
+      marginLeft: theme.spacing(10),
       [theme.breakpoints.down("md")]: {
         display: "none",
       },
-      height: 58,
+      height: 38,
     },
     grow: {
       flexGrow: 1,
