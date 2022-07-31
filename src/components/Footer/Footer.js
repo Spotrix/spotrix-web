@@ -62,7 +62,7 @@ export default function Footer() {
           {/* divider */}
           <Divider className={classes.appDivider} />
           <Typography className={classes.copyright}>
-            © 2021-2-22 Spotrix & GuinsoooLab
+            © 2021-2022 Spotrix & GuinsoooLab
           </Typography>
         </Container>
       </div>
