@@ -10,12 +10,6 @@ export default makeStyles((theme) => ({
   },
   logo: {
     marginTop: theme.spacing(6),
-    display: "flex",
-    width: "100%",
-    justifyContent: "center",
-    [theme.breakpoints.down("md")]: {
-      display: "none",
-    },
     height: 44,
   },
   logoBody: {
@@ -127,8 +121,7 @@ export default makeStyles((theme) => ({
   copyright: {
     display: "flex",
     width: "100%",
-    justifyContent: "center",
     color: theme.palette.text.hint,
-    marginBottom: theme.spacing(5),
+    marginBottom: theme.spacing(2),
   },
 }));

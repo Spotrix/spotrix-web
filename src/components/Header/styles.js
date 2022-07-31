@@ -4,7 +4,6 @@ export default makeStyles(theme => {
   return ({
     appBar: {
       width: "100vw",
-      paddingTop: theme.spacing(1),
       zIndex: theme.zIndex.drawer + 1,
       transition: theme.transitions.create(["margin"], {
         easing: theme.transitions.easing.sharp,
@@ -31,7 +30,6 @@ export default makeStyles(theme => {
       width: 150,
       color: theme.palette.text.secondary,
       fontSize: 15,
-      fontWeight: 600,
       "&:hover": {
         cursor: "pointer",
         color: theme.palette.primary.main,
@@ -50,7 +48,6 @@ export default makeStyles(theme => {
       paddingRight: theme.spacing(2),
       color: theme.palette.text.primary,
       fontSize: 15,
-      fontWeight: 600,
       "&:hover": {
         cursor: "pointer",
         color: theme.palette.primary.main,
@@ -64,13 +61,10 @@ export default makeStyles(theme => {
     },
     buttonInfoToMore: {
       fontSize: 16,
-      fontWeight: 800,
       color: theme.palette.primary.main,
-      borderColor: "white",
+      borderColor: theme.palette.primary.main,
       paddingLeft: theme.spacing(3),
       paddingRight: theme.spacing(3),
-      paddingTop: theme.spacing(1),
-      paddingBottom: theme.spacing(1),
       borderRadius: 4,
       textTransform: "Capitalize",
     },

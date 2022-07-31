@@ -2,9 +2,6 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 
-// components
-import Title from "../../../components/Title";
-
 // images
 import FF1 from "../../../images/ff_1.svg"
 import FF2 from "../../../images/ff_2.svg"
@@ -14,7 +11,16 @@ import FF4 from "../../../images/ff_4.svg"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginBottom: theme.spacing(5),
+    backgroundColor: "white",
+  },
+  gridContent: {
+    padding: theme.spacing(2),
+    color: "white",
+    backgroundColor: theme.palette.primary.main,
+    "&:hover": {
+      color: theme.palette.text.primary,
+      backgroundColor: "white",
+    }
   },
   img: {
     display: "flex",
@@ -26,13 +32,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   title: {
-    color: "black",
     fontSize: 22,
     fontWeight: 600,
   },
   content: {
-    color: theme.palette.text.secondary,
     fontSize: 16,
+    marginBottom: theme.spacing(5),
   },
 }));
 
@@ -68,37 +73,26 @@ export default function Feature2() {
 
   return (
     <div className={classes.root}>
-      <Title
-        name="Main Features"
-        tip=""
-      />
-      <Grid container>
-        <Grid item xs={1}>
+        <Grid container>
+          {
+            ConfigData.map(item => (
+              <Grid
+                item
+                xs={3}
+                key={item.id}
+                className={classes.gridContent}
+              >
+                <div className={classes.img}>
+                  <img src={item.logo} height={88} alt={item.id} />
+                </div>
+                <div className={classes.cardBody}>
+                  <p className={classes.title}>{item.title}</p>
+                  <p className={classes.content}>{item.content}</p>
+                </div>
+              </Grid>
+            ))
+          }
         </Grid>
-        <Grid item xs={10}>
-          <Grid container spacing={3}>
-            {
-              ConfigData.map(item => (
-                <Grid
-                  item
-                  xs={3}
-                  key={item.id}
-                >
-                  <div className={classes.img}>
-                    <img src={item.logo} height={88} alt={item.id} />
-                  </div>
-                  <div className={classes.cardBody}>
-                    <p className={classes.title}>{item.title}</p>
-                    <p className={classes.content}>{item.content}</p>
-                  </div>
-                </Grid>
-              ))
-            }
-          </Grid>
-        </Grid>
-        <Grid item xs={1}>
-        </Grid>
-      </Grid>
     </div>
   );
 }

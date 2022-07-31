@@ -21,28 +21,28 @@ const MainFeatures = [
     video: InsightsVideo,
     title: "Instant insights for all",
     longDesc: "Stop waiting for custom reports from data experts and instantly answer ad-hoc data questions on the fly.",
-    link: "",
+    link: "https://ciusji.gitbook.io/spotrix/",
   },
   {
     id: 2,
     video: CloudDataVideo,
     title: "Unleash the value of your cloud data",
     longDesc: "Maximize the value of your cloud data warehouse and accelerate speed-to-insight for everyone across your business.",
-    link: "",
+    link: "https://ciusji.gitbook.io/spotrix/",
   },
   {
     id: 3,
     video: DeveloperVideo,
     title: "Build Interactive Data Apps",
     longDesc: "Drive adoption by embedding search and insight-driven actions into your apps using our low-code developer-friendly platform.",
-    link: "",
+    link: "https://ciusji.gitbook.io/spotrix/",
   },
   {
     id: 4,
     video: BacklogVideo,
     title: "Bye-bye backlog",
     longDesc: "Empower non-technical people to answer their own data questions, while you build a single source of truth with security and governance at scale.",
-    link: "",
+    link: "https://ciusji.gitbook.io/spotrix/",
   },
 ];
 
@@ -57,29 +57,28 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(5),
   },
   featureContainer: {
-    height: "65vh",
+    height: "75vh",
     marginTop: theme.spacing(2),
   },
   appName: {
     color: "black",
-    fontSize: 25,
+    fontSize: 32,
     fontWeight: 600,
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(3),
   },
   featureLongDesc: {
     marginTop: theme.spacing(2),
-    lineHeight: 2,
     color: theme.palette.text.secondary,
-    fontSize: 20,
+    fontSize: 16,
   },
   featurePic: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     "& > video": {
-      width: "35vw",
-      height: "35vw",
+      width: "40vw",
+      height: "40vw",
     },
   },
   featureInfo: {
@@ -126,7 +125,7 @@ export default function Feature4() {
     <div className={classes.root}>
       <Title
         name="Explore Your Data"
-        tip=""
+        tip="Building enterprise-ready business intelligence web application"
       />
       <Grid container>
         <Grid item xs={2}>
@@ -134,12 +133,12 @@ export default function Feature4() {
         <Grid item xs={8}>
           {MainFeatures.map(info => (
             <Grid container
-                  spacing={5}
-                  key={info.id}
-                  className={classes.featureContainer}
-                  id={info.id}
-                  direction={info.id % 2 === 0 ? "row-reverse" : "row"}
-                  justify={"flex-start"}
+              spacing={5}
+              key={info.id}
+              className={classes.featureContainer}
+              id={info.id}
+              direction={info.id % 2 === 0 ? "row-reverse" : "row"}
+              justify={"flex-start"}
             >
               <Grid item xs={5} className={classes.featureInfo}>
                 <p className={classes.appName}>
@@ -154,7 +153,7 @@ export default function Feature4() {
                   color={"primary"}
                   endIcon={<ArrowRightAltIcon />}
                   className={classes.learnMore}
-                  // onClick={() => window.open(info.link, "_target")}
+                  onClick={() => window.open(info.link, "_target")}
                 >
                   Learn More
                 </Button>

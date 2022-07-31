@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 
 // imgs
-import CorpIcon from "../../../images/corp.svg";
+import GuinsooEbook from "../../../images/gusinsoo-ebook.png";
 import CommaIcon from "../../../images/comma.svg";
 
 const useStyles = makeStyles((theme) => ({
@@ -14,10 +14,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "white",
-    fontSize: 24,
+    fontSize: 16,
   },
   content: {
-    height: "15vh",
+    height: "20vh",
     color: theme.palette.text.primary,
     lineHeight: 2,
   },
@@ -29,14 +29,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
     color: "black",
   },
-  avatarGrid: {
+  bookGrid: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-  },
-  avatar: {
-    width: theme.spacing(18),
-    height: theme.spacing(18),
+    "& > img": {
+      height: "25vh"
+    }
   }
 }));
 
@@ -56,12 +55,9 @@ export default function Feature5() {
                   everyone who want to data management. I don’t think enough people know how helpful
                   this technology can be, but just try it and you will do better.
                 </i></p>
-                <p className={classes.smallFont}>
-                  - Ciusji, administrator of GuinsooLab
-                </p>
               </Grid>
-              <Grid item xs={3} className={classes.avatarGrid}>
-                <img src={CorpIcon} alt="corp" className={classes.avatar} onClick={() => window.open("https://guinsoolab.github.io/glab", "_target")} />
+              <Grid item xs={3} className={classes.bookGrid}>
+                <img src={GuinsooEbook} alt="corp" onClick={() => window.open("https://guinsoolab.github.io/glab", "_target")} />
               </Grid>
             </Grid>
           </Grid>

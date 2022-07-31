@@ -18,6 +18,7 @@ export default function Header() {
     <AppBar
       id="attr"
       position="fixed"
+      elevation={0}
       className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
         <img
@@ -26,20 +27,13 @@ export default function Header() {
           alt="glab-logo"
           onClick={() => window.open("#/app/home", "_self")}
         />
-        {/*<div className={classes.grow} />*/}
+        <div className={classes.grow} />
         <p
           className={classes.subTitle}
           onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_target")}
         >
-          Docs
+          Documentation
         </p>
-        <p
-          className={classes.subTitle}
-          onClick={() => { window.open("https://ciusji.gitbook.io/spotrix/", "_target")}}
-        >
-          Blog
-        </p>
-        <div className={classes.grow} />
         <div>
           <Button
             variant={"outlined"}

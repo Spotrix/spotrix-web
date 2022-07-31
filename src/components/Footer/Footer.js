@@ -27,21 +27,22 @@ export default function Footer() {
                 className={classes.logo}
                 alt="spotrix-logo-footer"
               />
-              <Typography className={classes.logoBody}>
-                explore insights for everyone
-              </Typography>
             </Grid>
-            <Grid item xs={1}>
-            </Grid>
-            <Grid item xs={9} >
+            <Grid item xs={10}>
               <Grid container>
-                <Grid item xs={3} className={classes.footerBody}>
+                <Grid item xs={2} className={classes.footerBody}>
                   <b className={classes.title2}>Spotrix</b>
-                  <p className={classes.body2} onClick={() => window.open("https://github.com/GuinsooLab", "_target")}>About Us</p>
-                  <p className={classes.body2} onClick={() => window.open("https://guinsoolab.github.io/glab/", "_target")}>Products</p>
-                  <p className={classes.body2} onClick={() => window.open("https://ciusji.gitbook.io/guinsoolab/", "_target")}>Docs</p>
+                  <p className={classes.body2} onClick={() => window.open("https://github.com/Spotrix", "_target")}>About Us</p>
+                  <p className={classes.body2} onClick={() => window.open("https://github.com/Spotrix", "_target")}>Terms</p>
                 </Grid>
-                <Grid item xs={3} className={classes.footerBody}>
+                <Grid item xs={2} className={classes.footerBody}>
+                  <b className={classes.title2}>GuinsooLab</b>
+                  <p className={classes.body2} onClick={() => window.open("https://github.com/GuinsooLab", "_target")}>GuinsooLab Stack</p>
+                  <p className={classes.body2} onClick={() => window.open("https://guinsoolab.github.io/glab", "_target")}>GuinsooLab Solutions</p>
+                  <p className={classes.body2} onClick={() => window.open("https://github.com/IreliaTable", "_target")}>IreliaTable</p>
+                  <p className={classes.body2} onClick={() => window.open("https://github.com/ElixirNote", "_target")}>ElixirNote</p>
+                </Grid>
+                <Grid item xs={2} className={classes.footerBody}>
                   <b className={classes.title2}>Community</b>
                   <p className={classes.body2} onClick={() => window.open("https://github.com/Spotrix", "_target")}>
                     <img src={GitHubLogo} width={14} alt="github-logo"/>
@@ -61,7 +62,7 @@ export default function Footer() {
           {/* divider */}
           <Divider className={classes.appDivider} />
           <Typography className={classes.copyright}>
-            © 2021 Spotrix Software Inc.
+            © 2021-2-22 Spotrix & GuinsoooLab
           </Typography>
         </Container>
       </div>
