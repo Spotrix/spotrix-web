@@ -5,6 +5,16 @@ import { makeStyles } from "@material-ui/styles";
 
 import AbractionHeroImg from "../../../images/abraction-hero.svg";
 
+// import logo
+import AirbyteLogo from "../../../images/airbyte_2x.png";
+import AlltrailsLogo from "../../../images/alltrails_2x.png";
+import AstronomerLogo from "../../../images/astronomer_2x.png";
+import DandelionLogo from "../../../images/dandelion_2x.png";
+import DarwinLogo from "../../../images/darwin__x.png";
+import FuminationLogo from "../../../images/fumination_2x.png";
+import NowLogo from "../../../images/now_2x.png";
+import WavelyLogo from "../../../images/wavely_2x.png";
+
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100vw",
@@ -18,10 +28,18 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "column",
   },
   rightPaper: {
-    height: "100vh",
+    height: "90vh",
     display: "flex",
     justifyContent: "center",
-    flexDirection: "column",
+  },
+  bottomPaper: {
+    height: "10vh",
+    display: "flex",
+    justifyContent: "center",
+  },
+  logoImg: {
+    height: 40,
+    margin: "1rem",
   },
   logoSlogan: {
     fontSize: 76,
@@ -90,6 +108,22 @@ export default function Feature1() {
         </Grid>
         <Grid item xs={1}>
         </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item xs={1} />
+        <Grid item xs={10}>
+          <Grid container className={classes.bottomPaper}>
+            <Grid item><img src={AirbyteLogo} className={classes.logoImg} alt="airbyte-logo" /></Grid>
+            <Grid item><img src={AlltrailsLogo} className={classes.logoImg} alt="alltrails-logo" /></Grid>
+            <Grid item><img src={AstronomerLogo} className={classes.logoImg} alt="astronomer-logo" /></Grid>
+            <Grid item><img src={DandelionLogo} className={classes.logoImg} alt="dandelion-logo" /></Grid>
+            <Grid item><img src={DarwinLogo} className={classes.logoImg} alt="darwin-logo" /></Grid>
+            <Grid item><img src={FuminationLogo} className={classes.logoImg} alt="fumination-logo" /></Grid>
+            <Grid item><img src={NowLogo} className={classes.logoImg} alt="now-logo" /></Grid>
+            <Grid item><img src={WavelyLogo} className={classes.logoImg} alt="wavely-logo" /></Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={1} />
       </Grid>
     </div>
   );
