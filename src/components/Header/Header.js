@@ -37,7 +37,7 @@ export default function Header() {
         <div>
           <Button
             variant={"outlined"}
-            className={classes.buttonInfoToMore}
+            className={classes.buttonDownload}
             onClick={() => window.open("https://github.com/Spotrix/spotrix/releases", "_target")}
           >
             Download

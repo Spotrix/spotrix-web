@@ -8,17 +8,22 @@ import CommaIcon from "../../../images/comma.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    height: "35vh",
+    height: "45vh",
+    backgroundColor: "#ffffff",
+    fontSize: 20,
+    color: "#ffffff",
+  },
+  mainRoot: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "white",
-    fontSize: 16,
+    height: "40vh",
+    backgroundColor: theme.palette.primary.main,
+    borderRadius: 20,
+    padding: theme.spacing(2),
   },
   content: {
-    height: "20vh",
-    color: theme.palette.text.primary,
+    height: "30vh",
     lineHeight: 2,
   },
   large: {
@@ -34,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     "& > img": {
-      height: "25vh"
+      height: "30vh"
     }
   }
 }));
@@ -47,7 +52,7 @@ export default function Feature5() {
         <Grid container>
           <Grid item xs={2}>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={8} className={classes.mainRoot}>
             <Grid container>
               <Grid item xs={9}>
                 <img src={CommaIcon} width={20} alt="comma"/>

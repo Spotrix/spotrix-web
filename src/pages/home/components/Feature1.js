@@ -18,17 +18,17 @@ import WavelyLogo from "../../../images/wavely_2x.png";
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100vw",
-    height: "100vh",
+    height: "110vh",
     backgroundColor: "white",
   },
   leftPaper: {
-    height: "90vh",
+    height: "100vh",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
   },
   rightPaper: {
-    height: "90vh",
+    height: "100vh",
     display: "flex",
     justifyContent: "center",
   },
@@ -75,9 +75,9 @@ export default function Feature1() {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={2}>
+        <Grid item xs={1}>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={4}>
           <div className={classes.leftPaper}>
             <div>
               <p className={classes.logoSlogan}>

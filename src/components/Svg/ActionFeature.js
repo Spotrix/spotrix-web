@@ -7,10 +7,11 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     width: "100vw",
     height: "45vh",
-    backgroundColor: "white",
-    backgroundImage: 'url(' + require('../../images/bg-secondary.svg') + ')',
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundColor: theme.palette.primary.main,
+    backgroundImage: 'url(' + require('../../images/cta-graph-repeating.png') + ')',
+    backgroundSize: "1300px auto,auto",
+    backgroundPosition: "50% 100%",
+    backgroundRepeat: "repeat-x,repeat",
     color: "white",
   },
 }));
@@ -21,9 +22,7 @@ export default function ActionFeature() {
   return (
     <div>
       <Grid container>
-        <Grid item xs={4} className={classes.root} />
-        <Grid item xs={4} className={classes.root} />
-        <Grid item xs={4} className={classes.root} />
+        <Grid item xs={12} className={classes.root} />
       </Grid>
     </div>
   );

@@ -9,8 +9,8 @@ export default makeStyles(theme => {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
       }),
-      backgroundColor: "white",
-      color: theme.palette.primary.main,
+      backgroundColor: "#000000",
+      color: "#ffffff",
     },
     toolbar: {
       paddingLeft: theme.spacing(2),
@@ -59,7 +59,7 @@ export default makeStyles(theme => {
       color: theme.palette.text.secondary,
       fontSize: 13,
     },
-    buttonInfoToMore: {
+    buttonDownload: {
       fontSize: 16,
       color: theme.palette.primary.main,
       borderColor: theme.palette.primary.main,

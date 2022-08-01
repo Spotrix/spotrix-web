@@ -17,10 +17,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     color: "white",
     backgroundColor: theme.palette.primary.main,
-    "&:hover": {
-      color: theme.palette.text.primary,
-      backgroundColor: "white",
-    }
   },
   img: {
     display: "flex",

@@ -6,10 +6,11 @@ export default makeStyles(theme => ({
     justifyContent: "center",
     width: "100vw",
     flexDirection: "column",
+    paddingTop: theme.spacing(5),
   },
   featureTitle: {
     color: theme.palette.text.primary,
-    fontWeight: 500,
+    fontWeight: 600,
     fontSize: 40,
     display: "flex",
     justifyContent: "center",
@@ -21,8 +22,9 @@ export default makeStyles(theme => ({
     textAlign: "center",
     width: "100vw",
     color: theme.palette.text.secondary,
+    fontSize: 16,
   },
   tip: {
-    width: 400,
+    width: 800,
   },
 }));

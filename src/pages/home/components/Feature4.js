@@ -8,40 +8,40 @@ import Divider from "@material-ui/core/Divider";
 // components
 import Title from "../../../components/Title";
 
-// videos
-import InsightsVideo from "../../../video/insights.mp4";
-import CloudDataVideo from "../../../video/clouddata.mp4";
-import DeveloperVideo from "../../../video/developer.mp4";
-import BacklogVideo from "../../../video/backlog.mp4";
+// images
+import Abstract1 from "../../../images/abstraction-visual-explorer.svg";
+import Abstract2 from "../../../images/abstraction-faster-exploration.svg";
+import Abstract3 from "../../../images/abstraction-data-points.svg";
+import Abstract4 from "../../../images/abstraction-quick-calcs.svg";
 
 
 const MainFeatures = [
   {
     id: 1,
-    video: InsightsVideo,
-    title: "Instant insights for all",
-    longDesc: "Stop waiting for custom reports from data experts and instantly answer ad-hoc data questions on the fly.",
+    image: Abstract1,
+    title: "Explore large datasets with ease",
+    longDesc: "Switch between data-heavy visualizations fast with Guinsoo — our revolutionary data engine.",
     link: "https://ciusji.gitbook.io/spotrix/",
   },
   {
     id: 2,
-    video: CloudDataVideo,
-    title: "Unleash the value of your cloud data",
-    longDesc: "Maximize the value of your cloud data warehouse and accelerate speed-to-insight for everyone across your business.",
+    image: Abstract2,
+    title: "Generate limitless visualizations",
+    longDesc: "Prepare pivot tables, data facets, combo charts, dual axes with multiple measures, and more.",
     link: "https://ciusji.gitbook.io/spotrix/",
   },
   {
     id: 3,
-    video: DeveloperVideo,
-    title: "Build Interactive Data Apps",
-    longDesc: "Drive adoption by embedding search and insight-driven actions into your apps using our low-code developer-friendly platform.",
+    image: Abstract3,
+    title: "Highlight key insights",
+    longDesc: "Link visual elements, like size or color, to your data and expressively represent your findings.",
     link: "https://ciusji.gitbook.io/spotrix/",
   },
   {
     id: 4,
-    video: BacklogVideo,
-    title: "Bye-bye backlog",
-    longDesc: "Empower non-technical people to answer their own data questions, while you build a single source of truth with security and governance at scale.",
+    image: Abstract4,
+    title: "Create data aggregations, more simply",
+    longDesc: "Perform codeless Quick Calculations and transformations without writing additional SQL.",
     link: "https://ciusji.gitbook.io/spotrix/",
   },
 ];
@@ -49,7 +49,7 @@ const MainFeatures = [
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: "#f2f6fa",
+    backgroundColor: "#ffffff",
   },
   items: {
     display: "flex",
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(5),
   },
   featureContainer: {
-    height: "75vh",
+    height: "100vh",
     marginTop: theme.spacing(2),
   },
   appName: {
@@ -69,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
   },
   featureLongDesc: {
     marginTop: theme.spacing(2),
+    lineHeight: 2,
     color: theme.palette.text.secondary,
     fontSize: 16,
   },
@@ -76,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    "& > video": {
+    "& > img": {
       width: "40vw",
       height: "40vw",
     },
@@ -88,28 +89,16 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
   },
   learnMore: {
-    marginTop: theme.spacing(4),
-    width: "40%",
+    marginTop: theme.spacing(6),
+    width: "30%",
     paddingBottom: theme.spacing(1),
     paddingTop: theme.spacing(1),
     textTransform: "Capitalize",
-    fontWeight: 600,
     color: "white",
     backgroundColor: theme.palette.primary.main,
     "&:hover": {
       color: theme.palette.primary.main,
     }
-  },
-  buttonLink: {
-    marginTop: theme.spacing(5),
-  },
-  buttonInfoToSystem: {
-    margin: "0px 8px",
-    borderRadius: 4,
-    "&:hover": {
-      backgroundColor: theme.palette.primary.main,
-      color: "white",
-    },
   },
   divider: {
     backgroundColor: theme.palette.primary.main,
@@ -128,9 +117,9 @@ export default function Feature4() {
         tip="Building enterprise-ready business intelligence web application"
       />
       <Grid container>
-        <Grid item xs={2}>
+        <Grid item xs={1}>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={10}>
           {MainFeatures.map(info => (
             <Grid container
               spacing={5}
@@ -159,14 +148,12 @@ export default function Feature4() {
                 </Button>
               </Grid>
               <Grid item xs={7} className={classes.featurePic}>
-                <video autoPlay={true} loop={true} muted={true}>
-                  <source src={info.video} type={"video/mp4"} />
-                </video>
+                <img src={info.image} alt="img" />
               </Grid>
             </Grid>
           ))}
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={1}>
         </Grid>
       </Grid>
     </div>
