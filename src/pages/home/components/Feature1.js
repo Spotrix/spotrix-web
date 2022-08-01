@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "white",
   },
   leftPaper: {
-    height: "100vh",
+    height: "90vh",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
