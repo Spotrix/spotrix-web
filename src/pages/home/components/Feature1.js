@@ -2,51 +2,59 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/styles";
-
-import AbractionHeroImg from "../../../images/abraction-hero.svg";
-
-// import logo
-import AirbyteLogo from "../../../images/airbyte_2x.png";
-import AlltrailsLogo from "../../../images/alltrails_2x.png";
-import AstronomerLogo from "../../../images/astronomer_2x.png";
-import DandelionLogo from "../../../images/dandelion_2x.png";
-import DarwinLogo from "../../../images/darwin__x.png";
-import FuminationLogo from "../../../images/fumination_2x.png";
-import NowLogo from "../../../images/now_2x.png";
-import WavelyLogo from "../../../images/wavely_2x.png";
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100vw",
-    height: "110vh",
-    backgroundColor: "white",
+    height: "100vh",
   },
   leftPaper: {
-    height: "90vh",
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-  },
-  rightPaper: {
     height: "100vh",
     display: "flex",
     justifyContent: "center",
+    flexDirection: "column",
+    paddingLeft: theme.spacing(10),
+    paddingRight: theme.spacing(10),
+    paddingBottom: theme.spacing(5),
+    backgroundColor: theme.palette.primary.main,
+    color: "#000000",
+    border: "4px solid #000000",
   },
-  bottomPaper: {
-    height: "10vh",
+  rightPaper1: {
+    borderTop: "4px solid #000000",
+    borderRight: "4px solid #000000",
+    height: "50vh",
     display: "flex",
     justifyContent: "center",
+    backgroundColor: "#96b5ff",
+  },
+  rightPaper2: {
+    borderTop: "4px solid #000000",
+    borderRight: "4px solid #000000",
+    height: "50vh",
+    display: "flex",
+    justifyContent: "center",
+    backgroundColor: "#d4f888",
+  },
+  rightPaper3: {
+    height: "50vh",
+    display: "flex",
+    justifyContent: "center",
+    backgroundColor: "#fcd568",
+    borderTop: "4px solid #000000",
+    borderBottom: "4px solid #000000",
+    borderRight: "4px solid #000000",
   },
   logoImg: {
     height: 40,
     margin: "1rem",
   },
   logoSlogan: {
-    fontSize: 76,
+    fontSize: 70,
     fontWeight: 600,
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(1),
-    color: theme.palette.primary.main
   },
   logoSloganBody: {
     fontSize: 24,
@@ -56,12 +64,23 @@ const useStyles = makeStyles(theme => ({
   buttonInfoToMore: {
     fontSize: 16,
     marginTop: theme.spacing(5),
-    borderRadius: 4,
     textTransform: "Capitalize",
+    backgroundColor: "#000000",
+    borderRadius: 0,
+    color: "#ffffff",
+    marginRight: theme.spacing(3),
+  },
+  buttonInfoDownload: {
+    fontSize: 16,
+    marginTop: theme.spacing(5),
+    textTransform: "Capitalize",
+    borderColor: "#000000",
+    borderRadius: 0,
+    color: "#000000",
+    marginRight: theme.spacing(3),
   },
   mainTitle: {
     display: "flex",
-    color: theme.palette.text.primary,
     justifyContent: "center",
   },
 }));
@@ -69,15 +88,13 @@ const useStyles = makeStyles(theme => ({
 export default function Feature1() {
   const classes = useStyles();
 
-  const defaultSystemName = "Spotrix";
-  const slogan = "Unleash the value of your data";
+  const defaultSystemName = "Unleash the value of your data";
+  const slogan = "A modern, enterprise-ready business intelligence web application";
 
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={1}>
-        </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={6}>
           <div className={classes.leftPaper}>
             <div>
               <p className={classes.logoSlogan}>
@@ -91,39 +108,30 @@ export default function Feature1() {
             </div>
             <div>
               <Button
-                variant={"contained"}
-                color={"primary"}
+                variant={"outlined"}
                 className={classes.buttonInfoToMore}
+                endIcon={<ArrowRightAltIcon />}
                 onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_blank")}
               >
                 Learn More
+              </Button>
+              <Button
+                variant={"outlined"}
+                className={classes.buttonInfoDownload}
+                onClick={() => window.open("https://github.com/Spotrix/spotrix/releases", "_blank")}
+              >
+                Download App
               </Button>
             </div>
           </div>
         </Grid>
         <Grid item xs={6}>
-          <div className={classes.rightPaper}>
-            <img src={AbractionHeroImg} alt="abraction-hero" width={"100%"} />
-          </div>
-        </Grid>
-        <Grid item xs={1}>
-        </Grid>
-      </Grid>
-      <Grid container>
-        <Grid item xs={1} />
-        <Grid item xs={10}>
-          <Grid container className={classes.bottomPaper}>
-            <Grid item><img src={AirbyteLogo} className={classes.logoImg} alt="airbyte-logo" /></Grid>
-            <Grid item><img src={AlltrailsLogo} className={classes.logoImg} alt="alltrails-logo" /></Grid>
-            <Grid item><img src={AstronomerLogo} className={classes.logoImg} alt="astronomer-logo" /></Grid>
-            <Grid item><img src={DandelionLogo} className={classes.logoImg} alt="dandelion-logo" /></Grid>
-            <Grid item><img src={DarwinLogo} className={classes.logoImg} alt="darwin-logo" /></Grid>
-            <Grid item><img src={FuminationLogo} className={classes.logoImg} alt="fumination-logo" /></Grid>
-            <Grid item><img src={NowLogo} className={classes.logoImg} alt="now-logo" /></Grid>
-            <Grid item><img src={WavelyLogo} className={classes.logoImg} alt="wavely-logo" /></Grid>
+          <Grid container>
+            <Grid item xs={6} className={classes.rightPaper1} />
+            <Grid item xs={6} className={classes.rightPaper2} />
+            <Grid item xs={12} className={classes.rightPaper3} />
           </Grid>
         </Grid>
-        <Grid item xs={1} />
       </Grid>
     </div>
   );

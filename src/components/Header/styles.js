@@ -32,7 +32,7 @@ export default makeStyles(theme => {
       fontSize: 15,
       "&:hover": {
         cursor: "pointer",
-        color: theme.palette.primary.main,
+        color: "#ffffff",
       },
       textAlign: "center",
     },
@@ -60,12 +60,14 @@ export default makeStyles(theme => {
       fontSize: 13,
     },
     buttonDownload: {
-      fontSize: 16,
-      color: theme.palette.primary.main,
+      color: "#ffffff",
+      backgroundColor: theme.palette.primary.main,
       borderColor: theme.palette.primary.main,
+      paddingTop: 4,
+      paddingBottom: 4,
       paddingLeft: theme.spacing(3),
       paddingRight: theme.spacing(3),
-      borderRadius: 4,
+      borderRadius: 20,
       textTransform: "Capitalize",
     },
   });
