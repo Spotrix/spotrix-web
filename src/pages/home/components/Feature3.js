@@ -10,12 +10,12 @@ import Ecosystem from "../../../images/guinsoo-ecosystem-spotrix.png";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    paddingBottom: theme.spacing(10),
+    paddingBottom: theme.spacing(5),
     backgroundColor: "#ffffff",
   },
   container: {
     display: "flex",
-    height: "80vh",
+    height: "70vh",
     justifyContent: "center",
     alignItems: "center",
   },

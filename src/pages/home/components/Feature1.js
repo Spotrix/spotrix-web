@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
     margin: "1rem",
   },
   logoSlogan: {
-    fontSize: 76,
+    fontSize: 56,
     fontWeight: 600,
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(1),
@@ -56,8 +56,14 @@ const useStyles = makeStyles(theme => ({
   buttonInfoToMore: {
     fontSize: 16,
     marginTop: theme.spacing(5),
-    borderRadius: 4,
+    borderRadius: 20,
+    paddingLeft: theme.spacing(3),
+    paddingRight: theme.spacing(3),
     textTransform: "Capitalize",
+    "&:hover": {
+      backgroundColor: "#ffffff",
+      color: theme.palette.primary.main
+    }
   },
   mainTitle: {
     display: "flex",
@@ -90,7 +96,8 @@ export default function Feature1() {
             </div>
             <div>
               <Button
-                variant={"outlined"}
+                variant={"contained"}
+                color={"primary"}
                 className={classes.buttonInfoToMore}
                 endIcon={<ArrowRightAltIcon />}
                 onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_blank")}

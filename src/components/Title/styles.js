@@ -23,6 +23,7 @@ export default makeStyles(theme => ({
     width: "100vw",
     color: theme.palette.text.secondary,
     fontSize: 16,
+    lineHeight: 2,
   },
   tip: {
     width: 800,

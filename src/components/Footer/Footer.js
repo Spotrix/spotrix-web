@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "../Wrappers";
 import Divider from "@material-ui/core/Divider";
@@ -17,9 +16,10 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
-    <>
-      <div className={classes.root}>
-        <Container maxWidth="lg">
+    <div className={classes.root}>
+      <Grid container>
+        <Grid item xs={1} />
+        <Grid item xs={10}>
           <Grid container className={classes.footerPos}>
             <Grid item xs={2}>
               <img
@@ -64,8 +64,9 @@ export default function Footer() {
           <Typography className={classes.copyright}>
             © 2021-2022 Spotrix & GuinsoooLab
           </Typography>
-        </Container>
-      </div>
-    </>
+        </Grid>
+        <Grid item xs={1} />
+      </Grid>
+    </div>
   );
 }
