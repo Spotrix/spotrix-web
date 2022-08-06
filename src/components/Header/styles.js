@@ -9,8 +9,8 @@ export default makeStyles(theme => {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
       }),
-      backgroundColor: "#000000",
-      color: "#ffffff",
+      backgroundColor: "#ffffff",
+      color: "#000000",
     },
     toolbar: {
       paddingLeft: theme.spacing(2),
@@ -18,6 +18,7 @@ export default makeStyles(theme => {
     },
     logo: {
       marginLeft: theme.spacing(10),
+      marginRight: theme.spacing(10),
       [theme.breakpoints.down("md")]: {
         display: "none",
       },
@@ -27,12 +28,12 @@ export default makeStyles(theme => {
       flexGrow: 1,
     },
     subTitle: {
-      width: 150,
+      width: 100,
       color: theme.palette.text.secondary,
       fontSize: 15,
       "&:hover": {
         cursor: "pointer",
-        color: "#ffffff",
+        color: "#000000",
       },
       textAlign: "center",
     },
@@ -60,7 +61,6 @@ export default makeStyles(theme => {
       fontSize: 13,
     },
     buttonDownload: {
-      color: "#ffffff",
       backgroundColor: theme.palette.primary.main,
       borderColor: theme.palette.primary.main,
       paddingTop: 4,
@@ -69,6 +69,10 @@ export default makeStyles(theme => {
       paddingRight: theme.spacing(3),
       borderRadius: 20,
       textTransform: "Capitalize",
+      color: "#ffffff",
+      "&:hover" :{
+        color: "#000000"
+      }
     },
   });
 });

@@ -10,7 +10,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import useStyles from "./styles";
 
 // pictures
-import SpotrixLogo from "../../images/spotrix-footer.svg";
+import SpotrixLogo from "../../images/spotrix.svg";
 
 export default function Header() {
   const classes = useStyles();
@@ -28,16 +28,38 @@ export default function Header() {
           alt="glab-logo"
           onClick={() => window.open("#/app/home", "_self")}
         />
-        <p className={classes.subTitle}>
-          / GuinsooLab Spotrix
-        </p>
-        <div className={classes.grow} />
         <p
           className={classes.subTitle}
           onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_target")}
         >
-          Documentation
+          Overview
         </p>
+        <p
+          className={classes.subTitle}
+          onClick={() => window.open("https://ciusji.gitbook.io/spotrix/creating-charts/creating-your-charts", "_target")}
+        >
+          Gallery
+        </p>
+        <p
+          className={classes.subTitle}
+          onClick={() => window.open("https://ciusji.gitbook.io/spotrix/solutions/solutions", "_target")}
+        >
+          Solution
+        </p>
+        <p
+          className={classes.subTitle}
+          onClick={() => window.open("https://ciusji.gitbook.io/spotrix/ecosystem/ecosystem", "_target")}
+        >
+          Ecosystem
+        </p>
+        <p
+          className={classes.subTitle}
+          onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_target")}
+        >
+          FAQ
+        </p>
+        <div className={classes.grow} />
+        <div className={classes.grow} />
         <div>
           <Button
             variant={"outlined"}

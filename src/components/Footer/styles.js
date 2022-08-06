@@ -94,7 +94,10 @@ export default makeStyles((theme) => ({
   input: {
     marginTop: theme.spacing(2),
     backgroundColor: "white",
-    padding: theme.spacing(1),
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
+    paddingTop: 4,
+    paddingBottom: 4,
     borderRadius: 4,
   },
   button: {

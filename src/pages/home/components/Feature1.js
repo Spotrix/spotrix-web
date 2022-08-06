@@ -4,83 +4,64 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/styles";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
+// import logo
+import AirbyteLogo from "../../../images/airbyte_2x.png";
+import AlltrailsLogo from "../../../images/alltrails_2x.png";
+import AstronomerLogo from "../../../images/astronomer_2x.png";
+import DandelionLogo from "../../../images/dandelion_2x.png";
+import DarwinLogo from "../../../images/darwin__x.png";
+import FuminationLogo from "../../../images/fumination_2x.png";
+import NowLogo from "../../../images/now_2x.png";
+import WavelyLogo from "../../../images/wavely_2x.png";
+import HomeHero from "../../../images/abstraction-hero.svg";
+
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100vw",
-    height: "100vh",
+    height: "110vh",
+    backgroundColor: "white",
   },
   leftPaper: {
-    height: "100vh",
+    height: "90vh",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    paddingLeft: theme.spacing(10),
-    paddingRight: theme.spacing(10),
-    paddingBottom: theme.spacing(5),
-    backgroundColor: theme.palette.primary.main,
-    color: "#000000",
-    border: "4px solid #000000",
   },
-  rightPaper1: {
-    borderTop: "4px solid #000000",
-    borderRight: "4px solid #000000",
-    height: "50vh",
+  rightPaper: {
+    height: "100vh",
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "#96b5ff",
   },
-  rightPaper2: {
-    borderTop: "4px solid #000000",
-    borderRight: "4px solid #000000",
-    height: "50vh",
+  bottomPaper: {
+    height: "10vh",
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "#d4f888",
-  },
-  rightPaper3: {
-    height: "50vh",
-    display: "flex",
-    justifyContent: "center",
-    backgroundColor: "#fcd568",
-    borderTop: "4px solid #000000",
-    borderBottom: "4px solid #000000",
-    borderRight: "4px solid #000000",
   },
   logoImg: {
     height: 40,
     margin: "1rem",
   },
   logoSlogan: {
-    fontSize: 70,
+    fontSize: 76,
     fontWeight: 600,
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(1),
+    color: theme.palette.primary.main
   },
   logoSloganBody: {
-    fontSize: 24,
+    fontSize: 16,
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(5),
   },
   buttonInfoToMore: {
     fontSize: 16,
     marginTop: theme.spacing(5),
+    borderRadius: 4,
     textTransform: "Capitalize",
-    backgroundColor: "#000000",
-    borderRadius: 0,
-    color: "#ffffff",
-    marginRight: theme.spacing(3),
-  },
-  buttonInfoDownload: {
-    fontSize: 16,
-    marginTop: theme.spacing(5),
-    textTransform: "Capitalize",
-    borderColor: "#000000",
-    borderRadius: 0,
-    color: "#000000",
-    marginRight: theme.spacing(3),
   },
   mainTitle: {
     display: "flex",
+    color: theme.palette.text.primary,
     justifyContent: "center",
   },
 }));
@@ -94,7 +75,8 @@ export default function Feature1() {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={6}>
+        <Grid item xs={1} />
+        <Grid item xs={4}>
           <div className={classes.leftPaper}>
             <div>
               <p className={classes.logoSlogan}>
@@ -115,23 +97,29 @@ export default function Feature1() {
               >
                 Learn More
               </Button>
-              <Button
-                variant={"outlined"}
-                className={classes.buttonInfoDownload}
-                onClick={() => window.open("https://github.com/Spotrix/spotrix/releases", "_blank")}
-              >
-                Download App
-              </Button>
             </div>
           </div>
         </Grid>
-        <Grid item xs={6}>
-          <Grid container>
-            <Grid item xs={6} className={classes.rightPaper1} />
-            <Grid item xs={6} className={classes.rightPaper2} />
-            <Grid item xs={12} className={classes.rightPaper3} />
+        <Grid item xs={6} className={classes.rightPaper}>
+          <img src={HomeHero} alt="home-hero" width={"100%"} />
+        </Grid>
+        <Grid item xs={1} />
+      </Grid>
+      <Grid container>
+        <Grid item xs={1} />
+        <Grid item xs={10}>
+          <Grid container className={classes.bottomPaper}>
+            <Grid item><img src={AirbyteLogo} className={classes.logoImg} alt="airbyte-logo" /></Grid>
+            <Grid item><img src={AlltrailsLogo} className={classes.logoImg} alt="alltrails-logo" /></Grid>
+            <Grid item><img src={AstronomerLogo} className={classes.logoImg} alt="astronomer-logo" /></Grid>
+            <Grid item><img src={DandelionLogo} className={classes.logoImg} alt="dandelion-logo" /></Grid>
+            <Grid item><img src={DarwinLogo} className={classes.logoImg} alt="darwin-logo" /></Grid>
+            <Grid item><img src={FuminationLogo} className={classes.logoImg} alt="fumination-logo" /></Grid>
+            <Grid item><img src={NowLogo} className={classes.logoImg} alt="now-logo" /></Grid>
+            <Grid item><img src={WavelyLogo} className={classes.logoImg} alt="wavely-logo" /></Grid>
           </Grid>
         </Grid>
+        <Grid item xs={1} />
       </Grid>
     </div>
   );
