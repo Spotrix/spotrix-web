@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
   },
   logoSloganBody: {
     fontSize: 16,
-    marginTop: theme.spacing(1),
+    marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
   },
   buttonInfoToMore: {
