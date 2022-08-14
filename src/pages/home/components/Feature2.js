@@ -6,8 +6,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Title from "../../../components/Title";
 
 // images
-import Abstract1 from "../../../images/abs-1.svg";
-import Abstract2 from "../../../images/abs-2.svg";
+import Abstract1 from "../../../images/img_1.png";
+import Abstract2 from "../../../images/img_2.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,11 +34,11 @@ const useStyles = makeStyles((theme) => ({
     height: "5vh",
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(5),
-    paddingLeft: theme.spacing(7),
-    paddingRight: theme.spacing(7),
+    paddingLeft: theme.spacing(3),
+    paddingRight: theme.spacing(3),
     lineHeight: 2,
-    color: theme.palette.text.secondary,
-    fontSize: 16,
+    color: "#96a5bc",
+    fontSize: 18,
   },
 }));
 
@@ -57,7 +57,7 @@ export default function Feature2() {
         <Grid item xs={10}>
           <Grid containe className={classes.featureContainer}>
             <Grid item xs={6}>
-              <img src={Abstract2} alt="img" width={"90%"} />
+              <img src={Abstract2} alt="img" width={"90%"} style={{ borderRadius: 16}} />
               <p className={classes.appName}>
                 Zero to dashboard in minutes
               </p>
@@ -66,7 +66,7 @@ export default function Feature2() {
               </p>
             </Grid>
             <Grid item xs={6}>
-              <img src={Abstract1} alt="img" width={"90%"} />
+              <img src={Abstract1} alt="img" width={"90%"} style={{ borderRadius: 16}} />
               <p className={classes.appName}>
                 Easily explore data no matter your skill
               </p>

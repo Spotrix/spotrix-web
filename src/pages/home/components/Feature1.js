@@ -13,13 +13,20 @@ import DarwinLogo from "../../../images/darwin__x.png";
 import FuminationLogo from "../../../images/fumination_2x.png";
 import NowLogo from "../../../images/now_2x.png";
 import WavelyLogo from "../../../images/wavely_2x.png";
-import HomeHero from "../../../images/abstraction-hero.svg";
+import HomeHero from "../../../images/img.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100vw",
     height: "110vh",
-    backgroundColor: "white",
+    backgroundColor: "#ffffff",
+  },
+  main: {
+    width: "100vw",
+    height: "100vh",
+    backgroundImage: 'url(' + require('../../../images/background.svg') + ')',
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
   },
   leftPaper: {
     height: "90vh",
@@ -31,6 +38,11 @@ const useStyles = makeStyles(theme => ({
     height: "100vh",
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
+  },
+  paperImg: {
+    width: "50vw",
+    borderRadius: 16,
   },
   bottomPaper: {
     height: "10vh",
@@ -42,27 +54,28 @@ const useStyles = makeStyles(theme => ({
     margin: "1rem",
   },
   logoSlogan: {
-    fontSize: 56,
-    fontWeight: 600,
-    marginTop: theme.spacing(2),
+    fontSize: 84,
+    fontWeight: 800,
+    marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
     color: theme.palette.primary.main
   },
   logoSloganBody: {
-    fontSize: 16,
+    fontSize: 24,
+    color: "#96a5bc",
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
   },
   buttonInfoToMore: {
-    fontSize: 16,
+    fontSize: 18,
     marginTop: theme.spacing(5),
-    borderRadius: 20,
-    paddingLeft: theme.spacing(3),
-    paddingRight: theme.spacing(3),
+    paddingLeft: 0,
     textTransform: "Capitalize",
+    color: "#000000",
+    fontWeight: 800,
     "&:hover": {
-      backgroundColor: "#ffffff",
-      color: theme.palette.primary.main
+      fontWeight: 800,
+      backgroundColor: "transparent",
     }
   },
   mainTitle: {
@@ -75,12 +88,12 @@ const useStyles = makeStyles(theme => ({
 export default function Feature1() {
   const classes = useStyles();
 
-  const defaultSystemName = "Unleash the value of your data";
-  const slogan = "A modern, enterprise-ready business intelligence web application";
+  const defaultSystemName = "NextGen BI";
+  const slogan = "Unleash the value of your data";
 
   return (
     <div className={classes.root}>
-      <Grid container>
+      <Grid container className={classes.main}>
         <Grid item xs={1} />
         <Grid item xs={4}>
           <div className={classes.leftPaper}>
@@ -96,8 +109,8 @@ export default function Feature1() {
             </div>
             <div>
               <Button
-                variant={"contained"}
-                color={"primary"}
+                variant={"text"}
+                disableElevation
                 className={classes.buttonInfoToMore}
                 endIcon={<ArrowRightAltIcon />}
                 onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_blank")}
@@ -108,7 +121,7 @@ export default function Feature1() {
           </div>
         </Grid>
         <Grid item xs={6} className={classes.rightPaper}>
-          <img src={HomeHero} alt="home-hero" width={"100%"} />
+          <img src={HomeHero} alt="home-hero" className={classes.paperImg}/>
         </Grid>
         <Grid item xs={1} />
       </Grid>

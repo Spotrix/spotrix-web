@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1926px" height="1168px" viewBox="0 0 1926 1168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>action</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#42EFFF" offset="0%"></stop>
+            <stop stop-color="#477DFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#42EFFF" offset="0%"></stop>
+            <stop stop-color="#477DFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="action" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#2b86fd" x="0" y="0" width="1926" height="1168"></rect>
+        <rect id="Rectangle" fill="#2b86fd" x="0" y="0" width="1926" height="1168"></rect>
+        <rect id="Rectangle" fill="url(#linearGradient-1)" transform="translate(375.281440, 148.718560) rotate(45.000000) translate(-375.281440, -148.718560) " x="-100.21856" y="-301.28144" width="951" height="900" rx="48"></rect>
+        <rect id="Rectangle" fill="url(#linearGradient-2)" transform="translate(1926.416739, 1088.583261) rotate(45.000000) translate(-1926.416739, -1088.583261) " x="1450.91674" y="749.083261" width="951" height="679" rx="48"></rect>
+    </g>
+</svg>

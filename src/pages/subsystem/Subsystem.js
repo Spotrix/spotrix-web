@@ -8,7 +8,7 @@ import ActionFeature from "../../components/Svg/ActionFeature";
 
 // subsystem page feature
 import Feature1 from "../home/components/Feature1";
-import Feature3 from "../home/components/Feature3";
+import Feature3 from "../home/components/Feature4";
 
 // global data
 const Tools = [];
