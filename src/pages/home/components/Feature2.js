@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   featureLongDesc: {
     height: "5vh",
     marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(5),
+    marginBottom: theme.spacing(1),
     paddingLeft: theme.spacing(3),
     paddingRight: theme.spacing(3),
     lineHeight: 2,
