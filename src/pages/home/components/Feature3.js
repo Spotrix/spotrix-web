@@ -13,14 +13,13 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(10),
   },
   featureContainer: {
-    height: "34vh",
+    height: "28vh",
     marginTop: theme.spacing(1),
     display: "flex",
     alignItems: "center",
   },
   gridCard: {
-    paddingTop: theme.spacing(3),
-    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(1),
     paddingLeft: theme.spacing(5),
     paddingRight: theme.spacing(5),
   },
@@ -34,10 +33,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   featureLongDesc: {
-    height: "18vh",
+    height: "10vh",
     paddingBottom: theme.spacing(1),
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2),
+    paddingLeft: theme.spacing(4),
+    paddingRight: theme.spacing(4),
     lineHeight: 1.5,
     color: "#96a5bc",
     fontSize: 18,
@@ -64,7 +63,7 @@ export default function Feature3() {
                   Smart Narratives
                 </p>
                 <p className={classes.featureLongDesc}>
-                  Get customizable key insights, charts, dashboards, or data through natural language text and voice. Smart narratives show sales and timeline analysis, this visualization allows for creating quick insights in the dashboard. The smart narratives allow users to focus on particular insights by cross-filtering visuals on the page.
+                  Get key insights from a chart, dashboard or the data through natural language text and voice.
                 </p>
               </Card>
             </Grid>
@@ -74,7 +73,7 @@ export default function Feature3() {
                   Natural Language Q&A
                 </p>
                 <p className={classes.featureLongDesc}>
-                  Natural Language Q&A feature allows you to explore the data through business questions either in text or voice and get answers back in charts, insights, text, or voice. Users can ask questions in natural language and get answers in report visuals, slicers, text, bar charts, etc.
+                  Explore the data through business questions in natural language, either text or voice, and get answers back in charts, text and/or voice.
                 </p>
               </Card>
             </Grid>
@@ -87,7 +86,7 @@ export default function Feature3() {
                   Dynamic Attributes
                 </p>
                 <p className={classes.featureLongDesc}>
-                  Dynamic attributes enable you to add your model and create custom logic, allowing you to change measures, axes, legends, and charts dynamically. This enables the users' analysis of multiple KPIs along various dimensions with simple and intuitive visuals.
+                  Dashboards that allow you to change measures, axes, legends and titles on charts dynamically.
                 </p>
               </Card>
             </Grid>
@@ -97,7 +96,7 @@ export default function Feature3() {
                   Timeline Analysis
                 </p>
                 <p className={classes.featureLongDesc}>
-                  The visualization shows year to year, quarter on quarter, custom time period, and full and partial year/quarter analysis. Users measure total revenue, sales, customers, and in-stock quarter-on-quarter insights.
+                  Year-on-Year, Quarter-on-Quarter, custom time period, full and partial year/quarter analysis.
                 </p>
               </Card>
             </Grid>
@@ -110,7 +109,7 @@ export default function Feature3() {
                   Infographics
                 </p>
                 <p className={classes.featureLongDesc}>
-                  Infographic BI brings new visual possibilities in dashboards with use of use meaningful images and emojis on charts instead of traditional visuals. Through the infographic visuals, you can represent your bars and columns with custom visuals, graphics, images, etc.
+                  Dashboards that use meaningful images and emojis on charts instead of traditional visuals.
                 </p>
               </Card>
             </Grid>
@@ -120,7 +119,7 @@ export default function Feature3() {
                   Root cause & key driver analysis
                 </p>
                 <p className={classes.featureLongDesc}>
-                  Root cause analysis is a process of discovering the root cause of a problem and fully understanding how to fix, compensate, and systematically prevent future issues and repeat successes. Key driver analysis tells you the derived importance of potential drivers and customer behavior.
+                  Get insights on root cause(s) of a given problem being analysed and key drivers of behaviour being observed.
                 </p>
               </Card>
             </Grid>
@@ -133,7 +132,7 @@ export default function Feature3() {
                   Time series
                 </p>
                 <p className={classes.featureLongDesc}>
-                  Time series helps you in exploring and analyzing major patterns such as trends, seasonality, cyclicity, and irregularity. The time series BI is used for various applications such as economic forecasting, census analysis, stock market analysis, and so on.
+                  Dashboards that explore trends, seasonality and cyclic patterns in time series data.
                 </p>
               </Card>
             </Grid>
@@ -143,7 +142,7 @@ export default function Feature3() {
                   Demand forecasting
                 </p>
                 <p className={classes.featureLongDesc}>
-                  The nextgen BI plays a pivotal role in making strategies and taking correct measures based on data. Demand forecasting is an essential function of demand planning, estimating future customer demand over a defined period, and predicting outcomes based on historical data and other information.
+                  Forecasting and predicting outcomes based on historical data.
                 </p>
               </Card>
             </Grid>
@@ -156,7 +155,7 @@ export default function Feature3() {
                   Text Analytics
                 </p>
                 <p className={classes.featureLongDesc}>
-                  Text analytics uses AI-based technologies for deeper analysis, it helps businesses to understand the sentiments and determine key phrases in the given text. Sentiment analysis uses NLP that identifies the emotional tone behind the body of text. Key phrase extraction review text and returning extract key phrases.
+                  Understanding the sentiments and determining key phrases in the given text.
                 </p>
               </Card>
             </Grid>
