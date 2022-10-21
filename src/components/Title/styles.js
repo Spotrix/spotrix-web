@@ -21,8 +21,8 @@ export default makeStyles(theme => ({
     justifyContent: "center",
     textAlign: "center",
     width: "100vw",
-    color: "#96a5bc",
-    fontSize: 24,
+    color: theme.palette.text.primary,
+    fontSize: 18,
   },
   tip: {
     width: 800,

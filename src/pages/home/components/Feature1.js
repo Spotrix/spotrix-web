@@ -4,74 +4,68 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/styles";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
-// import logo
-import AirbyteLogo from "../../../images/airbyte_2x.png";
-import AlltrailsLogo from "../../../images/alltrails_2x.png";
-import AstronomerLogo from "../../../images/astronomer_2x.png";
-import DandelionLogo from "../../../images/dandelion_2x.png";
-import DarwinLogo from "../../../images/darwin__x.png";
-import FuminationLogo from "../../../images/fumination_2x.png";
-import NowLogo from "../../../images/now_2x.png";
-import WavelyLogo from "../../../images/wavely_2x.png";
-import HomeHero from "../../../images/img.png";
+// home-right image
+import HomeHero from "../../../images/right-image-v1.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100vw",
-    height: "110vh",
+    height: "100vh",
     backgroundColor: "#ffffff",
   },
   main: {
     width: "100vw",
     height: "100vh",
-    backgroundImage: 'url(' + require('../../../images/background.svg') + ')',
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundColor: "#061640",
   },
   leftPaper: {
     height: "90vh",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
+    paddingRight: theme.spacing(4),
   },
   rightPaper: {
     height: "100vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    paddingRight: theme.spacing(4),
   },
   paperImg: {
     width: "50vw",
     borderRadius: 16,
   },
-  bottomPaper: {
-    height: "10vh",
-    display: "flex",
-    justifyContent: "center",
-  },
-  logoImg: {
-    height: 40,
-    margin: "1rem",
-  },
   logoSlogan: {
-    fontSize: 84,
+    fontSize: 60,
     fontWeight: 800,
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
-    color: theme.palette.primary.main
+    color: "#fff"
   },
   logoSloganBody: {
-    fontSize: 24,
-    color: "#96a5bc",
+    fontSize: 22,
+    color: "#fff",
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5),
+  },
+  buttonInfoToStart: {
+    fontSize: 18,
+    marginTop: theme.spacing(5),
+    textTransform: "Capitalize",
+    color: theme.palette.secondary.main,
+    backgroundColor: "#fff",
+    borderRadius: 0,
+    fontWeight: 800,
+    padding: "16px 48px",
+    marginRight: theme.spacing(4),
   },
   buttonInfoToMore: {
     fontSize: 18,
     marginTop: theme.spacing(5),
     paddingLeft: 0,
     textTransform: "Capitalize",
-    color: "#000000",
+    color: theme.palette.secondary.main,
     fontWeight: 800,
     "&:hover": {
       fontWeight: 800,
@@ -88,26 +82,35 @@ const useStyles = makeStyles(theme => ({
 export default function Feature1() {
   const classes = useStyles();
 
-  const defaultSystemName = "NextGen BI";
-  const slogan = "Unleash the value of your data";
+  const defaultSystemName1 = "The Decision";
+  const defaultSystemName2 = "Intelligence Engine";
+  const slogan = "At GuinsooLab Next, we announced plans to build a deep integration—bringing decision intelligence to more people.";
 
   return (
     <div className={classes.root}>
       <Grid container className={classes.main}>
         <Grid item xs={1} />
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <div className={classes.leftPaper}>
             <div>
               <p className={classes.logoSlogan}>
-                {defaultSystemName}
+                {defaultSystemName1}
+                <br/>
+                {defaultSystemName2}
               </p>
               <p className={classes.logoSloganBody}>
                 {slogan}
               </p>
             </div>
             <div>
-            </div>
-            <div>
+              <Button
+                variant={"contained"}
+                disableElevation
+                className={classes.buttonInfoToStart}
+                onClick={() => window.open("https://github.com/Spotrix/spotrix", "_blank")}
+              >
+                GET STARTED
+              </Button>
               <Button
                 variant={"text"}
                 disableElevation
@@ -123,23 +126,6 @@ export default function Feature1() {
         <Grid item xs={6} className={classes.rightPaper}>
           <img src={HomeHero} alt="home-hero" className={classes.paperImg}/>
         </Grid>
-        <Grid item xs={1} />
-      </Grid>
-      <Grid container>
-        <Grid item xs={1} />
-        <Grid item xs={10}>
-          <Grid container className={classes.bottomPaper}>
-            <Grid item><img src={AirbyteLogo} className={classes.logoImg} alt="airbyte-logo" /></Grid>
-            <Grid item><img src={AlltrailsLogo} className={classes.logoImg} alt="alltrails-logo" /></Grid>
-            <Grid item><img src={AstronomerLogo} className={classes.logoImg} alt="astronomer-logo" /></Grid>
-            <Grid item><img src={DandelionLogo} className={classes.logoImg} alt="dandelion-logo" /></Grid>
-            <Grid item><img src={DarwinLogo} className={classes.logoImg} alt="darwin-logo" /></Grid>
-            <Grid item><img src={FuminationLogo} className={classes.logoImg} alt="fumination-logo" /></Grid>
-            <Grid item><img src={NowLogo} className={classes.logoImg} alt="now-logo" /></Grid>
-            <Grid item><img src={WavelyLogo} className={classes.logoImg} alt="wavely-logo" /></Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={1} />
       </Grid>
     </div>
   );

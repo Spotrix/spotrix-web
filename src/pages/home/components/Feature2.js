@@ -2,44 +2,38 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 
-// components
-import Title from "../../../components/Title";
-
 // images
-import Abstract1 from "../../../images/img_1.png";
-import Abstract2 from "../../../images/img_2.png";
+import AugmentDiagnose from "../../../images/augment-diagnose.png";
+import { Button } from "@material-ui/core";
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#FF7BDA",
   },
   featureContainer: {
-    height: "80vh",
+    height: "90vh",
     marginTop: theme.spacing(2),
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    textAlign: "center",
   },
   appName: {
-    height: "5vh",
-    color: "#000000",
-    fontSize: 28,
-    fontWeight: 600,
-    marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(3),
+    color: theme.palette.text.primary,
+    fontSize: 20,
+    fontWeight: 500,
   },
   featureLongDesc: {
-    height: "5vh",
-    marginTop: theme.spacing(1),
-    marginBottom: theme.spacing(1),
-    paddingLeft: theme.spacing(3),
-    paddingRight: theme.spacing(3),
-    lineHeight: 2,
-    color: "#96a5bc",
-    fontSize: 18,
+    color: theme.palette.text.primary,
+    fontSize: 42,
+    fontWeight: 800,
   },
+  moreButton: {
+    fontWeight: 600,
+    paddingLeft: 0,
+    borderRadius: 0,
+  }
 }));
 
 export default function Feature2() {
@@ -47,32 +41,28 @@ export default function Feature2() {
 
   return (
     <div className={classes.root}>
-      <Title
-        name="Turn every team into a data team"
-        tip="Building teams of all skill sets to be data driven, unlocking valuable insights with beautiful and interactive visualizations and dashboards"
-      />
       <Grid container>
-        <Grid item xs={1}>
+        <Grid item sm={1}>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item sm={10}>
           <Grid containe className={classes.featureContainer}>
             <Grid item xs={6}>
-              <img src={Abstract2} alt="img" width={"90%"} style={{ borderRadius: 16}} />
               <p className={classes.appName}>
-                Zero to dashboard in minutes
+                AUGMENT & DIAGNOSE
               </p>
               <p className={classes.featureLongDesc}>
-                Quickly build and share beautiful, customized, and dynamic dashboards that showcase your data with just a few clicks.
+                Comprehensively diagnose why metrics are changing with AI/ML-powered automated analytics
               </p>
+              <Button
+                variant={"text"}
+                endIcon={<ArrowRightAltIcon />}
+                className={classes.moreButton}
+              >
+                LEARN MORE
+              </Button>
             </Grid>
             <Grid item xs={6}>
-              <img src={Abstract1} alt="img" width={"90%"} style={{ borderRadius: 16}} />
-              <p className={classes.appName}>
-                Easily explore data no matter your skill
-              </p>
-              <p className={classes.featureLongDesc}>
-                Easily explore with our no-code viz builder or run deeper analysis using our state-of-the-art SQL editor.
-              </p>
+              <img src={AugmentDiagnose} alt="img" width={"80%"} />
             </Grid>
           </Grid>
         </Grid>

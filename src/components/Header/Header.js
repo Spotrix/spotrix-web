@@ -54,7 +54,7 @@ export default function Header() {
         </p>
         <p
           className={classes.subTitle}
-          onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_target")}
+          onClick={() => window.open("https://ciusji.gitbook.io/spotrix/appendix/faq", "_target")}
         >
           FAQ
         </p>

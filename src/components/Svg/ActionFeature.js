@@ -7,37 +7,43 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     width: "100vw",
-    height: "75vh",
-    backgroundImage: 'url(' + require('../../images/action.svg') + ')',
-    backgroundPosition: "100% 100%",
-    backgroundRepeat: "no-repeat",
+    height: "45vh",
     color: "white",
+    backgroundColor: theme.palette.secondary.main,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    paddingBottom: theme.spacing(15),
+    paddingBottom: theme.spacing(10),
   },
   title: {
-    color: "#ffffff",
+    color: theme.palette.text.primary,
     fontSize: 40,
-    fontWeight: 600,
-    marginBottom: theme.spacing(3),
+    fontWeight: 500,
+    marginBottom: theme.spacing(1),
+  },
+  titleSpan: {
+    fontWeight: 800,
+  },
+  desc: {
+    color: theme.palette.text.primary,
+    fontSize: 20,
   },
   buttonDownload: {
-    backgroundColor: "#ffffff",
-    borderColor: theme.palette.primary.main,
-    paddingTop: 8,
-    paddingBottom: 8,
-    paddingLeft: theme.spacing(6),
-    paddingRight: theme.spacing(6),
-    borderRadius: 30,
-    fontSize: 18,
+    backgroundColor: theme.palette.primary.main,
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+    paddingLeft: theme.spacing(4),
+    paddingRight: theme.spacing(4),
+    borderRadius: 0,
+    fontSize: 16,
+    fontWeight: "bolder",
     textTransform: "Capitalize",
-    color: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
+    marginTop: "5vh",
     "&:hover" :{
-      backgroundColor: "#ffffff",
-      fontWeight: 600,
+      backgroundColor: theme.palette.primary.main,
+      color: "#fff",
     }
   },
 }));
@@ -49,7 +55,8 @@ export default function ActionFeature() {
     <div>
       <Grid container>
         <Grid item xs={12} className={classes.root}>
-          <p className={classes.title}>Let’s get visual. Try Spotrix today.</p>
+          <p className={classes.title}>Customers analyze data <span className={classes.titleSpan}>80% faster</span></p>
+          <p className={classes.desc}>Free your analysts from inefficient tools and workflows</p>
           <Button
             variant={"outlined"}
             className={classes.buttonDownload}

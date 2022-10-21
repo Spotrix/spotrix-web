@@ -4,7 +4,7 @@ export default makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     display: "flex",
-    backgroundColor: "#000000",
+    backgroundColor: theme.palette.primary.main,
     color: fade("#fff", 0.9),
     paddingTop: theme.spacing(3),
   },
@@ -50,10 +50,9 @@ export default makeStyles((theme) => ({
   },
   body2: {
     fontSize: 14,
-    marginBottom: theme.spacing(1),
+    marginBottom: 4,
     "&:hover": {
       color: "white",
-      fontWeight: 600,
       cursor: "pointer",
     },
   },
@@ -93,26 +92,28 @@ export default makeStyles((theme) => ({
   },
   input: {
     marginTop: theme.spacing(2),
-    backgroundColor: "white",
-    paddingLeft: theme.spacing(1),
-    paddingRight: theme.spacing(1),
-    paddingTop: 4,
-    paddingBottom: 4,
-    borderRadius: 4,
+    padding: 4,
+    borderRadius: 0,
+    border: "1px solid #53fa87",
+    color: theme.palette.text.hint,
+    height: 48,
   },
   button: {
     width: 150,
-    padding: theme.spacing(1),
+    padding: 4,
     marginTop: theme.spacing(2),
-    marginBottom: theme.spacing(2),
-    backgroundColor: theme.palette.primary.main,
-    color: "white",
+    borderRadius: 0,
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
+    fontWeight: "bolder",
     textTransform: "Capitalize",
+    border: "1px solid #53fa87",
     "&:hover": {
-      backgroundColor: theme.palette.primary.main,
-      fontWeight: 800,
       cursor: "pointer",
+      backgroundColor: "#fff",
+      color: theme.palette.secondary.main,
     },
+    height: 48,
   },
   items: {
     display: "flex",
@@ -121,10 +122,16 @@ export default makeStyles((theme) => ({
     color: theme.palette.text.hint,
     marginBottom: theme.spacing(5),
   },
-  copyright: {
-    display: "flex",
-    width: "100%",
+  rightItems: {
     color: theme.palette.text.hint,
     marginBottom: theme.spacing(2),
+    marginRight: theme.spacing(2),
+    fontSize: 10,
   },
+  gapTag: {
+    color: theme.palette.secondary.main,
+    marginBottom: theme.spacing(2),
+    marginRight: theme.spacing(2),
+    fontSize: 10,
+  }
 }));
