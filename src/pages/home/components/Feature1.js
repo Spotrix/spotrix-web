@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/styles";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
 
 // home-right image
-import HomeHero from "../../../images/right-image-v1.png";
+import HomeHero from "../../../images/right-image-v2.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
