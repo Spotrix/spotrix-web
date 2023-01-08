@@ -107,7 +107,7 @@ export default function Feature1() {
                 variant={"contained"}
                 disableElevation
                 className={classes.buttonInfoToStart}
-                onClick={() => window.open("https://github.com/Spotrix/spotrix", "_blank")}
+                onClick={() => window.open("https://ciusji.gitbook.io/spotrix/creating-charts/creating-your-charts", "_blank")}
               >
                 GET STARTED
               </Button>
@@ -116,7 +116,7 @@ export default function Feature1() {
                 disableElevation
                 className={classes.buttonInfoToMore}
                 endIcon={<ArrowRightAltIcon />}
-                onClick={() => window.open("https://ciusji.gitbook.io/spotrix/", "_blank")}
+                onClick={() => window.open("https://ciusji.gitbook.io/spotrix", "_blank")}
               >
                 Learn More
               </Button>

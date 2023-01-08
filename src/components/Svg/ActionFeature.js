@@ -60,7 +60,7 @@ export default function ActionFeature() {
           <Button
             variant={"outlined"}
             className={classes.buttonDownload}
-            onClick={() => window.open("https://github.com/Spotrix/spotrix/releases", "_target")}
+            onClick={() => window.open("https://ciusji.gitbook.io/spotrix/installing/installing-from-pip", "_target")}
           >
             Download
           </Button>

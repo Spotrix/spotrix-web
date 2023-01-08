@@ -44,7 +44,7 @@ export default function Header() {
           className={classes.subTitle}
           onClick={() => window.open("https://ciusji.gitbook.io/spotrix/solutions/solutions", "_target")}
         >
-          Solution
+          Solutions
         </p>
         <p
           className={classes.subTitle}
@@ -56,7 +56,7 @@ export default function Header() {
           className={classes.subTitle}
           onClick={() => window.open("https://ciusji.gitbook.io/spotrix/appendix/faq", "_target")}
         >
-          FAQ
+          FAQs
         </p>
         <div className={classes.grow} />
         <div className={classes.grow} />
@@ -64,7 +64,7 @@ export default function Header() {
           <Button
             variant={"outlined"}
             className={classes.buttonDownload}
-            onClick={() => window.open("https://github.com/Spotrix/spotrix/releases", "_target")}
+            onClick={() => window.open("https://ciusji.gitbook.io/spotrix/installing/installing-from-pip", "_target")}
           >
             Download
           </Button>
