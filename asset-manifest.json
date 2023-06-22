@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/spotrix-web/static/js/main.559c215d.chunk.js",
+    "main.js.map": "/spotrix-web/static/js/main.559c215d.chunk.js.map",
+    "runtime~main.js": "/spotrix-web/static/js/runtime~main.2cee48ba.js",
+    "runtime~main.js.map": "/spotrix-web/static/js/runtime~main.2cee48ba.js.map",
+    "static/js/2.dff490ca.chunk.js": "/spotrix-web/static/js/2.dff490ca.chunk.js",
+    "static/js/2.dff490ca.chunk.js.map": "/spotrix-web/static/js/2.dff490ca.chunk.js.map",
+    "index.html": "/spotrix-web/index.html",
+    "precache-manifest.db9db0c478c1e8d2c0ef5d2589cca613.js": "/spotrix-web/precache-manifest.db9db0c478c1e8d2c0ef5d2589cca613.js",
+    "service-worker.js": "/spotrix-web/service-worker.js",
+    "static/media/augment-diagnose.png": "/spotrix-web/static/media/augment-diagnose.b1b16fe5.png",
+    "static/media/kpi-mrr-hero.png": "/spotrix-web/static/media/kpi-mrr-hero.79dcbe3e.png",
+    "static/media/monitor-alert.png": "/spotrix-web/static/media/monitor-alert.1e8aac5f.png",
+    "static/media/predict-act.png": "/spotrix-web/static/media/predict-act.bf19c552.png",
+    "static/media/right-image-v2.png": "/spotrix-web/static/media/right-image-v2.66c9febb.png",
+    "static/media/spotrix-footer.svg": "/spotrix-web/static/media/spotrix-footer.5fb1d511.svg",
+    "static/media/spotrix.svg": "/spotrix-web/static/media/spotrix.977c34c9.svg"
+  }
+}
